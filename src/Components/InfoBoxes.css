@@ -1,0 +1,18 @@
+.card-container{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.card{
+	margin: 20px;
+	border: 1px solid black;
+}
+
+.outer{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid black;
+	background-color: #9CCEE9;
+}

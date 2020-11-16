@@ -1,25 +1,46 @@
 import logo from './logo.svg';
 import './App.css';
+import './index.css'
+import React from 'react'
+import NavbarComp from './Components/Navbar'
+import InfoBoxes from './Components/InfoBoxes'
+import SearchBar from './Components/SearchBar'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+class App extends React.Component {
+  constructor(props){
+    super(props)
+    this.state = {
+      page: 1
+    }
+  }
+
+  render(){
+    if(this.state.page == 1){
+       return (
+        <div>
+          <NavbarComp />
+          <div className="app-container">
+            <div className="title">
+              <h1 className="title-text">Twitter API Application</h1>
+            </div>
+            <div>
+              <InfoBoxes />
+            </div>
+          </div>
+        </div>
+      );
+    } else {
+       return (
+        <div>
+          <NavbarComp />
+          <div className="search-container">
+            <SearchBar />
+          </div>
+        </div>
+      );
+    }
+  }
 }
 
 export default App;

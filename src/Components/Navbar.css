@@ -1,0 +1,26 @@
+.navbar{
+	display: flex;
+	flex-direction: row;
+	background-color: #6FB1D5;
+	border: 1px solid black;
+}
+
+.tab{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 2em;
+	width: 10em;
+	padding: 1em;
+	border: 1px solid black;
+}
+
+.tab:hover{
+	background-color: #2D78A0;
+	cursor: pointer;
+}
+
+.last-tab{
+	width: 100%;
+	border: 1px solid black;
+}
