@@ -4,6 +4,10 @@
 	background-color: #6FB1D5;
 	border: 1px solid black;
 }
+.icon{
+	height: 4em;
+	width: 4em;
+}
 
 .tab{
 	display: flex;
