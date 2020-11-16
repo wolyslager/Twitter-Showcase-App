@@ -8,10 +8,10 @@ const InfoBoxes = () => {
 		   <Card className='outer card' style={{ width: '21rem', height: '21rem' }}>
 			<Card className='card' style={{ width: '18rem', height: '18rem' }} bg="primary" text="light">
 			  <Card.Body>
-			    <Card.Title>Card Title</Card.Title>
+			    <Card.Title>What is it?</Card.Title>
 			    <Card.Text>
-			      Some quick example text to build on the card title and make up the bulk of
-			      the card's content.
+			      This application lets you search for yout favorite Twitter users and see their most recent Tweets! It also
+			      allows you to view a random selection of Tweets if you want. 
 			    </Card.Text>
 			    <Card.Link href="#">Card Link</Card.Link>
 			    <Card.Link href="#">Another Link</Card.Link>
@@ -21,10 +21,10 @@ const InfoBoxes = () => {
 		  <Card className='outer card' style={{ width: '21rem', height: '21rem' }}>
 			<Card className='card' style={{ width: '18rem', height: '18rem' }} bg="primary" text="light">
 			  <Card.Body>
-			    <Card.Title>Card Title</Card.Title>
+			    <Card.Title>How Do I Use It?</Card.Title>
 			    <Card.Text>
-			      Some quick example text to build on the card title and make up the bulk of
-			      the card's content.
+			      Click on the "Find Tweets" tab and type in a Twitter user into the search bar.
+			       If you're feeling lucky, click on the "Roll The Dice" tab!
 			    </Card.Text>
 			    <Card.Link href="#">Card Link</Card.Link>
 			    <Card.Link href="#">Another Link</Card.Link>
@@ -34,10 +34,10 @@ const InfoBoxes = () => {
 		  <Card className='outer card' style={{ width: '21rem', height: '21rem' }}>
 			<Card className='card' style={{ width: '18rem', height: '18rem' }} bg="primary" text="light">
 			  <Card.Body>
-			    <Card.Title>Card Title</Card.Title>
+			    <Card.Title>How Does It Work?</Card.Title>
 			    <Card.Text>
-			      Some quick example text to build on the card title and make up the bulk of
-			      the card's content.
+			      The Twitter API App has a ReactJS front end that communicates with a NodeJS server. The server 
+			      makes requests to the Twitter API and the response is then rendered here!
 			    </Card.Text>
 			    <Card.Link href="#">Card Link</Card.Link>
 			    <Card.Link href="#">Another Link</Card.Link>

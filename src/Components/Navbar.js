@@ -6,20 +6,16 @@ import Nav from 'react-bootstrap/Nav';
 import Button from 'react-bootstrap/Button';
 import './SearchBar.css'
 
-const NavbarComp = () => {
+const NavbarComp = (props) => {
 	return(
 		<div>
 		  <Navbar bg="primary" variant="dark">
 			    <Navbar.Brand href="#home">Twitter API App</Navbar.Brand>
 			    <Nav className="mr-auto">
-			      <Nav.Link href="#home">Home</Nav.Link>
-			      <Nav.Link href="#features">Find Tweets</Nav.Link>
-			      <Nav.Link href="#pricing">Roll The Dice</Nav.Link>
+			      <Nav.Link onClick={() => props.changeTabs(1)}>Home</Nav.Link>
+			      <Nav.Link onClick={() => props.changeTabs(2)}>Find Tweets</Nav.Link>
+			      <Nav.Link >Roll The Dice</Nav.Link>
 			    </Nav>
-			    <Form inline>
-			      <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-			      <Button variant="outline-light">Search</Button>
-			    </Form>
 		  </Navbar>
 	  </div>
 	);

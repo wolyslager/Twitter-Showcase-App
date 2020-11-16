@@ -13,13 +13,21 @@ class App extends React.Component {
     this.state = {
       page: 1
     }
+
+    this.changeTabs = this.changeTabs.bind(this);
+  }
+
+  changeTabs(page){
+    this.setState({
+      page: page
+    })
   }
 
   render(){
     if(this.state.page == 1){
        return (
         <div>
-          <NavbarComp />
+          <NavbarComp changeTabs={this.changeTabs} />
           <div className="app-container">
             <div className="title">
               <h1 className="title-text">Twitter API Application</h1>
@@ -33,7 +41,7 @@ class App extends React.Component {
     } else {
        return (
         <div>
-          <NavbarComp />
+          <NavbarComp changeTabs={this.changeTabs}/>
           <div className="search-container">
             <SearchBar />
           </div>
