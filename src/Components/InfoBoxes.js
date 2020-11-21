@@ -14,8 +14,6 @@ const InfoBoxes = () => {
 			      This application lets you search for yout favorite Twitter users and see their most recent Tweets! It also
 			      allows you to view a random selection of Tweets if you want. 
 			    </Card.Text>
-			    <Card.Link href="#">Card Link</Card.Link>
-			    <Card.Link href="#">Another Link</Card.Link>
 			  </Card.Body>
 			</Card>	
 		   </Card>
@@ -28,8 +26,6 @@ const InfoBoxes = () => {
 			      Click on the "Find Tweets" tab and type in a Twitter user into the search bar.
 			       If you're feeling lucky, click on the "Roll The Dice" tab!
 			    </Card.Text>
-			    <Card.Link href="#">Card Link</Card.Link>
-			    <Card.Link href="#">Another Link</Card.Link>
 			  </Card.Body>
 			</Card>	
 		   </Card>
@@ -42,8 +38,6 @@ const InfoBoxes = () => {
 			      The Twitter API App has a ReactJS front end that communicates with a NodeJS server. The server 
 			      makes requests to the Twitter API and the response is then rendered here!
 			    </Card.Text>
-			    <Card.Link href="#">Card Link</Card.Link>
-			    <Card.Link href="#">Another Link</Card.Link>
 			  </Card.Body>
 			</Card>	
 		   </Card>

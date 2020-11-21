@@ -38,12 +38,21 @@ class App extends React.Component {
           </div>
         </div>
       );
-    } else {
+    } else if(this.state.page ==2) {
        return (
         <div>
           <NavbarComp changeTabs={this.changeTabs}/>
           <div className="search-container">
             <SearchBar />
+          </div>
+        </div>
+      );
+    } else {
+         return (
+        <div>
+          <NavbarComp changeTabs={this.changeTabs}/>
+          <div className="search-container">
+            
           </div>
         </div>
       );
