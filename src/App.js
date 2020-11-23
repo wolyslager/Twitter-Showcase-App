@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import './index.css'
 import React from 'react'
@@ -11,16 +10,40 @@ class App extends React.Component {
   constructor(props){
     super(props)
     this.state = {
-      page: 1
+      page: 1,
+      search: ''
     }
 
     this.changeTabs = this.changeTabs.bind(this);
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
+  }
+
+  componentDidMount(){
+    
   }
 
   changeTabs(page){
     this.setState({
       page: page
     })
+  }
+
+  handleChange(event){
+    this.setState({
+      search: event.target.value
+    })
+  }
+
+  handleSubmit(){
+    let url = 'http://localhost:3000/'
+    fetch(url, {
+        headers: {
+          'search_value' : this.state.search
+        }
+    })
+      .then(response => response.json())
+      .then(data => console.log(data))
   }
 
   render(){
@@ -43,7 +66,7 @@ class App extends React.Component {
         <div>
           <NavbarComp changeTabs={this.changeTabs}/>
           <div className="search-container">
-            <SearchBar />
+            <SearchBar handleChange={this.handleChange} handleSubmit={this.handleSubmit}/>
           </div>
         </div>
       );
