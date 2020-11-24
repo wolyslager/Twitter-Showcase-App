@@ -8,14 +8,20 @@ import './SearchBar.css'
 const SearchBar = (props) => {
 	//create array of tweets
 	let tweetArray =[];
+	let media;
 	if(props.result !== ''){
 		props.result.forEach((result) => {
-			console.log(result)
+			if(result.entities.media){
+				media = result.entities.media[0].media_url;
+			} else {
+				media = '';
+			}
 			tweetArray.push(
 				<Tweet 
-					text={result.text} 
+					text={result.full_text} 
 					name={result.user.name} 
-					profile_image={result.user.profile_image_url}/>
+					profile_image={result.user.profile_image_url}
+					media={media}/>
 			)
 		})
 	} else {
@@ -23,8 +29,8 @@ const SearchBar = (props) => {
 	}
 	
 	return(
-		<div>
-			<div>
+		<div className="container">
+			<div >
 				<InputGroup className="mb-3" style={{width:"35em"}}>
 				    <FormControl
 				      placeholder="Search for your favorite Twitter users..."
