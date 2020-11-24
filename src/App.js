@@ -11,7 +11,8 @@ class App extends React.Component {
     super(props)
     this.state = {
       page: 1,
-      search: ''
+      search: '',
+      result: ''
     }
 
     this.changeTabs = this.changeTabs.bind(this);
@@ -43,7 +44,11 @@ class App extends React.Component {
         }
     })
       .then(response => response.json())
-      .then(data => console.log(data))
+      .then((data) => {
+        this.setState({
+          result: data
+        })
+      })
   }
 
   render(){
@@ -66,7 +71,7 @@ class App extends React.Component {
         <div>
           <NavbarComp changeTabs={this.changeTabs}/>
           <div className="search-container">
-            <SearchBar handleChange={this.handleChange} handleSubmit={this.handleSubmit}/>
+            <SearchBar handleChange={this.handleChange} handleSubmit={this.handleSubmit} result={this.state.result}/>
           </div>
         </div>
       );
@@ -75,7 +80,6 @@ class App extends React.Component {
         <div>
           <NavbarComp changeTabs={this.changeTabs}/>
           <div className="search-container">
-            
           </div>
         </div>
       );
