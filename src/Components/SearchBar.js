@@ -11,6 +11,8 @@ const SearchBar = (props) => {
 	let media;
 	if(props.result !== ''){
 		props.result.forEach((result) => {
+			console.log(result)
+			console.log(result.user.screen_name)
 			if(result.entities.media){
 				media = result.entities.media[0].media_url;
 			} else {
@@ -21,7 +23,9 @@ const SearchBar = (props) => {
 					text={result.full_text} 
 					name={result.user.name} 
 					profile_image={result.user.profile_image_url}
-					media={media}/>
+					media={media}
+					userName={result.user.screen_name}
+					retweetCount={result.retweet_count}/>
 			)
 		})
 	} else {

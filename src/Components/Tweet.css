@@ -9,3 +9,17 @@
 	height: 100%;
 	width: 100%;
 }
+
+.title{
+	display: flex;
+	flex-direction: row;
+	justify-content: left;
+	align-items: center;
+}
+
+h2{
+	font-size: 16px;
+	margin-left: 10px;
+	color: gray;
+	margin-bottom: 0;
+}
