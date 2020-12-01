@@ -5,8 +5,8 @@ import Card from 'react-bootstrap/Card';
 const InfoBoxes = () => {
 	return(
 		<div className='card-container'>
-		   <Card className='outer card' style={{ width: '21rem', height: '21rem' }}>
-			<Card className='card' style={{ width: '18rem', height: '18rem' }} bg="primary" text="light">
+		   
+			<Card className='card' style={{ width: '18rem', height: '18rem' }} bg="secondary" text="light">
 			  <Card.Body>
 			    <Card.Title>What is it?</Card.Title>
 			    <hr className="horizontal"></hr>
@@ -16,9 +16,8 @@ const InfoBoxes = () => {
 			    </Card.Text>
 			  </Card.Body>
 			</Card>	
-		   </Card>
-		  <Card className='outer card' style={{ width: '21rem', height: '21rem' }}>
-			<Card className='card' style={{ width: '18rem', height: '18rem' }} bg="primary" text="light">
+
+			<Card className='card' style={{ width: '18rem', height: '18rem' }} bg="secondary" text="light">
 			  <Card.Body>
 			    <Card.Title>How Do I Use It?</Card.Title>
 			    <hr className="horizontal"></hr>
@@ -27,10 +26,9 @@ const InfoBoxes = () => {
 			       If you're feeling lucky, click on the "Roll The Dice" tab!
 			    </Card.Text>
 			  </Card.Body>
-			</Card>	
 		   </Card>
-		  <Card className='outer card' style={{ width: '21rem', height: '21rem' }}>
-			<Card className='card' style={{ width: '18rem', height: '18rem' }} bg="primary" text="light">
+
+			<Card className='card' style={{ width: '18rem', height: '18rem' }} bg="secondary" text="light">
 			  <Card.Body>
 			    <Card.Title>How Does It Work?</Card.Title>
 			    <hr className="horizontal"></hr>
@@ -40,7 +38,7 @@ const InfoBoxes = () => {
 			    </Card.Text>
 			  </Card.Body>
 			</Card>	
-		   </Card>
+		  
 		</div>
 	);
 }

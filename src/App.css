@@ -4,16 +4,27 @@ body {
   font-family: 'Josefin Sans', cursive;
 }
 
-.App {
-  text-align: center;
+
+.title-infoboxes-container{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #151E29;
+}
+
+.infoboxes-footer-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  margin-bottom: 0em;
 }
 
 .app-container{
-  height: 70vh;
-  display: flex;
-  flex-direction: column;
-  justify-content:  space-around;
-  align-items: center;
+  background-color: #151E29;
+  height: 100vh;
 }
 
 
@@ -23,13 +34,10 @@ body {
 }
 
 .title{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  color: white;
 }
 
 .title-text{
-  margin-top: 50px;
   font-size: 4rem;
 }
 

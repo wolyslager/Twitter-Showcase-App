@@ -4,6 +4,7 @@ import React from 'react'
 import NavbarComp from './Components/Navbar'
 import InfoBoxes from './Components/InfoBoxes'
 import SearchBar from './Components/SearchBar'
+import Footer from './Components/Footer'
 
 
 class App extends React.Component {
@@ -14,7 +15,6 @@ class App extends React.Component {
       search: '',
       result: ''
     }
-
     this.changeTabs = this.changeTabs.bind(this);
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -54,21 +54,22 @@ class App extends React.Component {
   render(){
     if(this.state.page == 1){
        return (
-        <div>
+        <div className="app-container">
           <NavbarComp changeTabs={this.changeTabs} />
-          <div className="app-container">
+          <div className="title-infoboxes-container">
             <div className="title">
               <h1 className="title-text">Twitter API Application</h1>
             </div>
-            <div>
+            <div className="infoboxes-footer-container">
               <InfoBoxes />
+               <Footer />
             </div>
           </div>
         </div>
       );
     } else if(this.state.page ==2) {
        return (
-        <div>
+        <div className="app-container">
           <NavbarComp changeTabs={this.changeTabs}/>
           <div className="search-container">
             <SearchBar handleChange={this.handleChange} handleSubmit={this.handleSubmit} result={this.state.result}/>

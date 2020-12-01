@@ -23,3 +23,20 @@ h2{
 	color: gray;
 	margin-bottom: 0;
 }
+
+.twitter-footer{
+	display: flex;
+	flex-direction: row;
+	justify-content: left;
+}
+
+.retweet{
+	margin-right: 10px;
+	color: blue;
+}
+
+.favorite{
+	margin-right: 10px;
+	margin-left: 10px;
+	color: red;
+}

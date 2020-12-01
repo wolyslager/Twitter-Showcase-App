@@ -25,7 +25,8 @@ const SearchBar = (props) => {
 					profile_image={result.user.profile_image_url}
 					media={media}
 					userName={result.user.screen_name}
-					retweetCount={result.retweet_count}/>
+					retweetCount={result.retweet_count}
+					favoriteCount={result.favorite_count}/>
 			)
 		})
 	} else {
