@@ -6,13 +6,15 @@ import Tweet from './Tweet.js'
 import './SearchBar.css'
 
 const SearchBar = (props) => {
+	//identify if response from server is comming from users or keywords
+	
+
 	//create array of tweets
 	let tweetArray =[];
 	let media;
 	if(props.result !== ''){
 		props.result.forEach((result) => {
 			console.log(result)
-			console.log(result.user.screen_name)
 			if(result.entities.media){
 				media = result.entities.media[0].media_url;
 			} else {

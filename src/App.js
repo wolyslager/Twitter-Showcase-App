@@ -5,6 +5,7 @@ import NavbarComp from './Components/Navbar'
 import InfoBoxes from './Components/InfoBoxes'
 import SearchBar from './Components/SearchBar'
 import Footer from './Components/Footer'
+import Button from 'react-bootstrap/Button';
 
 
 class App extends React.Component {
@@ -13,11 +14,14 @@ class App extends React.Component {
     this.state = {
       page: 1,
       search: '',
-      result: ''
+      result: '',
+      button_users:'info',
+      button_keywords:'secondary'
     }
     this.changeTabs = this.changeTabs.bind(this);
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.toggleButton = this.toggleButton.bind(this);
   }
 
   componentDidMount(){
@@ -37,7 +41,8 @@ class App extends React.Component {
   }
 
   handleSubmit(){
-    let url = 'http://localhost:3000/'
+    let endpoint = this.state.button_users == 'info' ? 'users' : 'keywords';
+    let url = 'http://localhost:3000/'+endpoint
     fetch(url, {
         headers: {
           'search_value' : this.state.search
@@ -49,6 +54,24 @@ class App extends React.Component {
           result: data
         })
       })
+  }
+
+  toggleButton(id){
+    if(id == 'users'){
+      let other = this.state.button_users == 'info' ? 'secondary' : 'info';
+      let current = this.state.button_users
+      this.setState({
+        button_users : other,
+        button_keywords: current
+      })
+    } else {
+      let other = this.state.button_keywords == 'info' ? 'secondary' : 'info';
+      let current = this.state.button_keywords
+      this.setState({
+        button_keywords : other,
+        button_users : current
+      })
+    }
   }
 
   render(){
@@ -73,6 +96,10 @@ class App extends React.Component {
           <NavbarComp changeTabs={this.changeTabs}/>
           <div className="search-container">
             <SearchBar handleChange={this.handleChange} handleSubmit={this.handleSubmit} result={this.state.result}/>
+            <div className="button-container">
+               <Button className="button" variant={this.state.button_users} size="lg" onClick={() => this.toggleButton('users')}>Users</Button>
+               <Button className="button" variant={this.state.button_keywords} size="lg" onClick={() => this.toggleButton('keywords')}>Keywords</Button>
+             </div>
           </div>
         </div>
       );
