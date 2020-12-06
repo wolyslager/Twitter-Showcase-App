@@ -57,7 +57,7 @@ class App extends React.Component {
 
   handleSubmit(endpoint){
     let header = endpoint == 'search' ? this.state.search : this.state.random_search;
-    let url = 'http://localhost:3000/'+ endpoint
+    let url = 'https://shrouded-atoll-44911.herokuapp.com/'+ endpoint
     fetch(url, {
         headers: {
           'search_value' : header
