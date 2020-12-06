@@ -9,7 +9,6 @@ import Footer from './Components/Footer'
 import RandomButton from './Components/RandomButton'
 import Button from 'react-bootstrap/Button';
 
-
 class App extends React.Component {
   constructor(props){
     super(props)
