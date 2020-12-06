@@ -1,0 +1,29 @@
+.random-container{
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+
+.fa{
+	width: 30em;
+	height: 30em;
+}
+
+.logo:hover{
+	cursor: pointer;
+	transform: scale(.95);
+}
+
+.logo:active{
+	transform: scale(.9)
+}
+
+.tweet-container{
+	display: flex;
+	justify-content: center;
+	background-color: #151E29;
+	width: 100vw;
+}

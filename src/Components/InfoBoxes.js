@@ -11,7 +11,7 @@ const InfoBoxes = () => {
 			    <Card.Title>What is it?</Card.Title>
 			    <hr className="horizontal"></hr>
 			    <Card.Text>
-			      This application lets you search for yout favorite Twitter users and see their most recent Tweets! It also
+			      This application lets you search for yout favorite Twitter topics and see the most recent Tweets about them! It also
 			      allows you to view a random selection of Tweets if you want. 
 			    </Card.Text>
 			  </Card.Body>
@@ -22,8 +22,8 @@ const InfoBoxes = () => {
 			    <Card.Title>How Do I Use It?</Card.Title>
 			    <hr className="horizontal"></hr>
 			    <Card.Text>
-			      Click on the "Find Tweets" tab and type in a Twitter user into the search bar.
-			       If you're feeling lucky, click on the "Roll The Dice" tab!
+			      Click on the "Find Tweets" tab and type in a topic that you are interested in into the search bar.
+			       If you're feeling lucky, go to the "Roll The Dice" tab and click on the bird!
 			    </Card.Text>
 			  </Card.Body>
 		   </Card>

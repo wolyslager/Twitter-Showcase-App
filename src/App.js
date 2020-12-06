@@ -4,7 +4,9 @@ import React from 'react'
 import NavbarComp from './Components/Navbar'
 import InfoBoxes from './Components/InfoBoxes'
 import SearchBar from './Components/SearchBar'
+import Tweet from './Components/Tweet'
 import Footer from './Components/Footer'
+import RandomButton from './Components/RandomButton'
 import Button from 'react-bootstrap/Button';
 
 
@@ -14,18 +16,16 @@ class App extends React.Component {
     this.state = {
       page: 1,
       search: '',
+      random_search: '',
       result: '',
+      random_result:'',
       button_users:'info',
       button_keywords:'secondary'
     }
     this.changeTabs = this.changeTabs.bind(this);
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
-    this.toggleButton = this.toggleButton.bind(this);
-  }
-
-  componentDidMount(){
-    
+    this.handleRandomChange = this.handleRandomChange.bind(this);
   }
 
   changeTabs(page){
@@ -36,48 +36,52 @@ class App extends React.Component {
 
   handleChange(event){
     this.setState({
-      search: event.target.value
+      search: event.target.value,
+      random_search: ''
     })
   }
 
-  handleSubmit(){
-    let endpoint = this.state.button_users == 'info' ? 'users' : 'keywords';
-    let url = 'http://localhost:3000/'+endpoint
+  handleRandomChange(randomWord){
+    this.setState({
+      search: '',
+      random_search: randomWord
+    })
+  }
+
+  componentDidUpdate(prevProps, prevState){
+    if(this.state.search == '' && this.state.random_search !== ''){
+      if(prevState.random_search !== this.state.random_search){
+        this.handleSubmit('random');
+      }
+    }
+  }
+
+  handleSubmit(endpoint){
+    let header = endpoint == 'search' ? this.state.search : this.state.random_search;
+    let url = 'http://localhost:3000/'+ endpoint
     fetch(url, {
         headers: {
-          'search_value' : this.state.search
+          'search_value' : header
         }
     })
       .then(response => response.json())
       .then((data) => {
-        this.setState({
-          result: data
-        })
+        if(endpoint == 'search'){
+          this.setState({
+            result: data 
+          })
+        } else {
+          this.setState({
+            random_result: data
+          })
+        } 
       })
-  }
-
-  toggleButton(id){
-    if(id == 'users'){
-      let other = this.state.button_users == 'info' ? 'secondary' : 'info';
-      let current = this.state.button_users
-      this.setState({
-        button_users : other,
-        button_keywords: current
-      })
-    } else {
-      let other = this.state.button_keywords == 'info' ? 'secondary' : 'info';
-      let current = this.state.button_keywords
-      this.setState({
-        button_keywords : other,
-        button_users : current
-      })
-    }
   }
 
   render(){
     if(this.state.page == 1){
        return (
-        <div className="app-container">
+        <div className="app-container-home">
           <NavbarComp changeTabs={this.changeTabs} />
           <div className="title-infoboxes-container">
             <div className="title">
@@ -92,14 +96,16 @@ class App extends React.Component {
       );
     } else if(this.state.page ==2) {
        return (
-        <div className="app-container">
+        <div className="app-container-search">
           <NavbarComp changeTabs={this.changeTabs}/>
           <div className="search-container">
-            <SearchBar handleChange={this.handleChange} handleSubmit={this.handleSubmit} result={this.state.result}/>
-            <div className="button-container">
-               <Button className="button" variant={this.state.button_users} size="lg" onClick={() => this.toggleButton('users')}>Users</Button>
-               <Button className="button" variant={this.state.button_keywords} size="lg" onClick={() => this.toggleButton('keywords')}>Keywords</Button>
-             </div>
+            <SearchBar 
+                handleChange={this.handleChange} 
+                handleSubmit={this.handleSubmit} 
+                result={this.state.result}
+                button_users = {this.state.button_users}
+                button_keywords = {this.state.button_keywords}
+                toggleButton={this.toggleButton}/>
           </div>
         </div>
       );
@@ -107,7 +113,8 @@ class App extends React.Component {
          return (
         <div>
           <NavbarComp changeTabs={this.changeTabs}/>
-          <div className="search-container">
+          <div className="random-container">
+            <RandomButton handleRandomChange = {this.handleRandomChange} random_result={this.state.random_result}/>
           </div>
         </div>
       );

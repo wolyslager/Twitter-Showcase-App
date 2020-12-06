@@ -6,3 +6,9 @@
 	justify-content: center;
 	align-items: center;
 }
+
+.button{
+  margin:1em;
+  width: 10em;
+  border: 1px solid black;
+}

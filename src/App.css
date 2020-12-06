@@ -4,7 +4,6 @@ body {
   font-family: 'Josefin Sans', cursive;
 }
 
-
 .title-infoboxes-container{
   height: 100vh;
   display: flex;
@@ -22,9 +21,21 @@ body {
   margin-bottom: 0em;
 }
 
-.app-container{
-  background-color: #151E29;
+.app-container-search{
   height: 100vh;
+  background-color: #151E29;
+}
+
+.app-container-home{
+  height: 100vh;
+  background-color: #151E29;
+  color: white;
+}
+
+.random-container{
+  height: 100vh;
+  width: 100vw;
+  background-color: #151E29;
 }
 
 
@@ -39,6 +50,7 @@ body {
 
 .title-text{
   font-size: 4rem;
+  color: white;
 }
 
 .search-container{
@@ -48,13 +60,10 @@ body {
   margin-top: 4em;
   display: flex;
   justify-content: center;
+  background-color: #151E29;
 }
 
-.button{
-  margin:1em;
-  width: 10em;
-  border: 1px solid black;
-}
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
