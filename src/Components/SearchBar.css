@@ -12,3 +12,14 @@
   width: 10em;
   border: 1px solid black;
 }
+
+.searchbar-container{
+	width: 100vw;
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-start;
+}
+
+.search-type{
+	width: 8em;
+}

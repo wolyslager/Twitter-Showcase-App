@@ -18,7 +18,7 @@ const NavbarComp = (props) => {
 			    </Navbar.Brand>
 			    <Nav className="mr-auto">
 			      <Nav.Link className="tab" onClick={() => props.changeTabs(1)}>Home</Nav.Link>
-			      <Nav.Link className="tab" onClick={() => props.changeTabs(2)}>Find Tweets</Nav.Link>
+			      <Nav.Link className="tab" onClick={() => props.changeTabs(2)}>Search</Nav.Link>
 			      <Nav.Link className="tab" onClick={() => props.changeTabs(3)}>Roll The Dice</Nav.Link>
 			    </Nav>
 		  </Navbar>

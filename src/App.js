@@ -14,8 +14,11 @@ class App extends React.Component {
     super(props)
     this.state = {
       page: 1,
+      keyword_button_class:'btn-success',
+      user_button_class:'btn-secondary',
       search: '',
       random_search: '',
+      search_type: 'keyword',
       result: '',
       random_result:'',
       button_users:'info',
@@ -25,12 +28,13 @@ class App extends React.Component {
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleRandomChange = this.handleRandomChange.bind(this);
+    this.handleSearchType = this.handleSearchType.bind(this);
   }
 
   changeTabs(page){
     this.setState({
       page: page
-    })
+    }) 
   }
 
   handleChange(event){
@@ -56,8 +60,8 @@ class App extends React.Component {
   }
 
   handleSubmit(endpoint){
-    let header = endpoint == 'search' ? this.state.search : this.state.random_search;
-    let url = 'https://shrouded-atoll-44911.herokuapp.com/'+ endpoint
+    let header = endpoint == 'search' || endpoint == 'search-user' ? this.state.search : this.state.random_search;
+    let url = 'http://localhost:3000/'+ endpoint
     fetch(url, {
         headers: {
           'search_value' : header
@@ -75,6 +79,22 @@ class App extends React.Component {
           })
         } 
       })
+  }
+
+  handleSearchType(button){
+    if(button == 'keyword'){
+      this.setState({
+        keyword_button_class: 'btn-success',
+        user_button_class: "btn-secondary",
+        search_type: 'keyword'
+      })
+    } else {
+      this.setState({
+        keyword_button_class: 'btn-secondary',
+        user_button_class: "btn-success",
+        search_type: 'user'
+      })
+    }
   }
 
   render(){
@@ -99,12 +119,16 @@ class App extends React.Component {
           <NavbarComp changeTabs={this.changeTabs}/>
           <div className="search-container">
             <SearchBar 
+                handleSearchType={this.handleSearchType}
+                keyword_button_class = {this.state.keyword_button_class}
+                user_button_class = {this.state.user_button_class}
                 handleChange={this.handleChange} 
                 handleSubmit={this.handleSubmit} 
                 result={this.state.result}
                 button_users = {this.state.button_users}
                 button_keywords = {this.state.button_keywords}
-                toggleButton={this.toggleButton}/>
+                toggleButton={this.toggleButton}
+                search_type={this.state.search_type}/>
           </div>
         </div>
       );

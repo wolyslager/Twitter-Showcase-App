@@ -8,6 +8,7 @@ import './SearchBar.css'
 const SearchBar = (props) => {
 	let tweetArray =[];
 	let media;
+	console.log(props)
 	//identify if response from server is comming from users or keywords
 	//this means its a response from keyword search
 	if(props.result !== ''){
@@ -31,10 +32,11 @@ const SearchBar = (props) => {
 	} else {
 	  tweetArray = ''
 	}
-	
-	return(
+	if(props.search_type == 'keyword'){
+		return(
 		<div className="container">
-			<div >
+			<div className="searchbar-container">
+				<Button className={`search-type ${props.user_button_class}`} onClick={() => props.handleSearchType('users')}>USERS</Button>
 				<InputGroup className="mb-3" style={{width:"35em"}}>
 				    <FormControl
 				      placeholder="Search for your favorite topics..."
@@ -46,12 +48,37 @@ const SearchBar = (props) => {
 			      <Button className="btn btn-primary" text="light" onClick={() => props.handleSubmit('search')}>Search</Button>
 			    </InputGroup.Append>
 			  </InputGroup>
+			  <Button className={`search-type ${props.keyword_button_class}`} onClick={() => props.handleSearchType('keyword')}>KEYWORDS</Button>
 		  </div>
 		  <div>
 			{tweetArray}
 		  </div>
 	  </div>
 	);
+  } else {
+  	return(
+		<div className="container">
+			<div className="searchbar-container">
+				<Button className={`search-type ${props.user_button_class}`} onClick={() => props.handleSearchType('users')}>USERS</Button>
+				<InputGroup className="mb-3" style={{width:"35em"}}>
+				    <FormControl
+				      placeholder="Search for your favorite topics..."
+				      aria-label="Recipient's username"
+				      aria-describedby="basic-addon2"
+				      onChange={props.handleChange}
+				    />
+			    <InputGroup.Append>
+			      <Button className="btn btn-primary" text="light" onClick={() => props.handleSubmit('search-user')}>Search</Button>
+			    </InputGroup.Append>
+			  </InputGroup>
+			  <Button className={`search-type ${props.keyword_button_class}`} onClick={() => props.handleSearchType('keyword')}>KEYWORDS</Button>
+		  </div>
+		  <div>
+			{tweetArray}
+		  </div>
+	  </div>
+	);
+  }
 }
 
 export default SearchBar;
