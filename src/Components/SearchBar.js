@@ -3,14 +3,12 @@ import InputGroup from 'react-bootstrap/InputGroup';
 import FormControl from 'react-bootstrap/FormControl';
 import Button from 'react-bootstrap/Button';
 import Tweet from './Tweet.js'
+import User from './User.js'
 import './SearchBar.css'
 
 const SearchBar = (props) => {
 	let tweetArray =[];
 	let media;
-	console.log(props)
-	//identify if response from server is comming from users or keywords
-	//this means its a response from keyword search
 	if(props.result !== ''){
 		props.result.forEach((result) => {
 			if(result.entities.media){
@@ -29,9 +27,14 @@ const SearchBar = (props) => {
 				favoriteCount={result.favorite_count}/>
 			)
 		})
+	} else if (props.user_result !== ''){
+	   tweetArray = <User 
+	   				profile_image={props.user_result.profile_image_url_https}
+	   				background_image={props.user_result.profile_banner_url}/>
 	} else {
-	  tweetArray = ''
+		tweetArray = ''
 	}
+
 	if(props.search_type == 'keyword'){
 		return(
 		<div className="container">

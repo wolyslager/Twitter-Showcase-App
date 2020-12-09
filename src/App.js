@@ -20,6 +20,7 @@ class App extends React.Component {
       random_search: '',
       search_type: 'keyword',
       result: '',
+      user_result: '',
       random_result:'',
       button_users:'info',
       button_keywords:'secondary'
@@ -71,13 +72,19 @@ class App extends React.Component {
       .then((data) => {
         if(endpoint == 'search'){
           this.setState({
-            result: data 
+            result: data ,
+            user_result: ''
+          })
+        } else if (endpoint == 'search-user') {
+          this.setState({
+            user_result: data,
+            result: ''
           })
         } else {
           this.setState({
             random_result: data
           })
-        } 
+        }
       })
   }
 
@@ -98,6 +105,7 @@ class App extends React.Component {
   }
 
   render(){
+    console.log(this.state.user_result)
     if(this.state.page == 1){
        return (
         <div className="app-container-home">
@@ -128,7 +136,8 @@ class App extends React.Component {
                 button_users = {this.state.button_users}
                 button_keywords = {this.state.button_keywords}
                 toggleButton={this.toggleButton}
-                search_type={this.state.search_type}/>
+                search_type={this.state.search_type}
+                user_result={this.state.user_result}/>
           </div>
         </div>
       );
