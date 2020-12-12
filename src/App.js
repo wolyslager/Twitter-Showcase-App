@@ -23,7 +23,9 @@ class App extends React.Component {
       user_result: '',
       random_result:'',
       button_users:'info',
-      button_keywords:'secondary'
+      button_keywords:'secondary',
+      profileArray : ['playstation', 'reactjs', 'microsoft', 'realmadrid', 'patagonia', 'apple', 'porsche', 'tesla'],
+      randomProfiles : []
     }
     this.changeTabs = this.changeTabs.bind(this);
     this.handleChange = this.handleChange.bind(this);
@@ -49,6 +51,33 @@ class App extends React.Component {
     this.setState({
       search: '',
       random_search: randomWord
+    })
+  }
+
+  componentDidMount(){
+    let randomProfiles = [];
+    let promises = [];
+    let profiles = this.state.profileArray;
+    let url = 'http://localhost:3000/random-users'
+    profiles.forEach((profile) => {
+      promises.push(
+      fetch(url, {
+        headers: {
+          'search_value' : profile
+        }
+    })
+      .then(response => response.json())
+      .then((data) => {
+          randomProfiles.push(data)
+      })
+     )
+    }) 
+
+    Promise.all(promises).then(() => {
+
+      this.setState({
+        randomProfiles : randomProfiles
+      })
     })
   }
 
@@ -105,7 +134,7 @@ class App extends React.Component {
   }
 
   render(){
-    console.log(this.state.user_result)
+    console.log(this.state)
     if(this.state.page == 1){
        return (
         <div className="app-container-home">
@@ -143,10 +172,10 @@ class App extends React.Component {
       );
     } else {
          return (
-        <div>
+        <div className="random-page">
           <NavbarComp changeTabs={this.changeTabs}/>
           <div className="random-container">
-            <RandomButton handleRandomChange = {this.handleRandomChange} random_result={this.state.random_result}/>
+            <RandomButton user_result = {this.state.randomProfiles}/>
           </div>
         </div>
       );

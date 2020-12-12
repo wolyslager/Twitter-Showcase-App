@@ -1,29 +1,12 @@
-.random-container{
-	height: 100vh;
-	width: 100vw;
+.card-container-profiles{
 	display: flex;
-	flex-direction: column;
-	align-items: center;
+	flex-direction: row;
+	margin: 0 auto;
+	flex-wrap: wrap;
+	margin-left: 2em;
 }
 
-
-.fa{
-	width: 30em;
-	height: 30em;
-}
-
-.logo:hover{
+.user-card:hover{
+	transform: scale(1.5);
 	cursor: pointer;
-	transform: scale(.95);
-}
-
-.logo:active{
-	transform: scale(.9)
-}
-
-.tweet-container{
-	display: flex;
-	justify-content: center;
-	background-color: #151E29;
-	width: 100vw;
 }

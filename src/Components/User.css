@@ -1,7 +1,117 @@
 .card-container{
 	display: flex;
+	flex-direction: row;
 	justify-content: center;
-	align-items: flex-start;
-	margin: 0 auto;
 	height: 100%;
+	background-color: #151E29;
+	margin-top: 3rem;
+}
+
+.card-container:hover{
+	transform: scale(1.01);
+	cursor: pointer;
+}	
+
+.background-img{
+	position: absolute;
+	top: 0rem;
+	left: 0rem;
+	height: 14rem;
+}
+.profile-img-user{
+	position: absolute;
+	top: 10.5rem;
+	border-radius: 50%;
+}
+
+.user-title{
+	position: absolute;
+	top: 17rem;
+	color: white;
+	font-size: 1.5rem;
+}
+
+.username{
+	position: absolute;
+	top: 19rem;
+	left: 0.7em;
+	font-size: .9rem;
+	color: grey;
+}
+
+.description{
+	position: absolute;
+	top: 21rem;
+	left: 0.7em;
+	font-size: .9rem;
+	color: white;
+
+}
+
+.user-info-container{
+	position: absolute;
+	top: 24rem;
+	left: 0.9em;
+	color: white;
+	display: flex;
+	align-items: flex-start;
+}
+
+.location{
+	font-size: .8em;
+	margin-right: .5em;
+}
+
+.user-location{
+	 font-size: 1rem;
+	 color: gray;
+	 margin-right: .5em;
+}
+
+.user-url{
+	 font-size: 1rem;
+	 color: gray;
+	 margin-right: .5em;
+	 color: #1DA1F2;
+	 text-decoration: underline;
+}
+
+.joined{
+	 font-size: 1rem;
+	 color: gray;
+	 margin-left: .5em;
+}
+
+.followers{
+	display: flex;
+	align-items: flex-start;
+	position: absolute;
+	top: 26rem;
+	left: 0.9em;
+	margin-right: .5em;
+}
+
+.following-count{
+	color: white;
+	font-size: 1rem;
+	font-weight: bold;
+}
+
+.following-text{
+	color: gray;
+	font-size: 1rem;
+	margin-left: .5em;
+}
+
+.follower-count{
+	color: white;
+	font-size: 1rem;
+	font-weight: bold;
+	margin-left: 1.5em;
+}
+
+.follower-text{
+	color: gray;
+	font-size: 1rem;
+	margin-left: .5em;
 }

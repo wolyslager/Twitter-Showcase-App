@@ -32,12 +32,18 @@ body {
   color: white;
 }
 
-.random-container{
-  height: 100vh;
-  width: 100vw;
-  background-color: #151E29;
+.random-page{
+    height: 100vh;
+    background-color: #151E29;
 }
 
+.random-container{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: #151E29;
+}
 
 .App-logo {
   height: 40vmin;

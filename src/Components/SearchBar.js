@@ -9,6 +9,8 @@ import './SearchBar.css'
 const SearchBar = (props) => {
 	let tweetArray =[];
 	let media;
+	let urlDisplay;
+	let url;
 	if(props.result !== ''){
 		props.result.forEach((result) => {
 			if(result.entities.media){
@@ -28,9 +30,48 @@ const SearchBar = (props) => {
 			)
 		})
 	} else if (props.user_result !== ''){
-	   tweetArray = <User 
-	   				profile_image={props.user_result.profile_image_url_https}
-	   				background_image={props.user_result.profile_banner_url}/>
+		if(props.user_result[0].hasOwnProperty('errors')){
+			tweetArray = 'User not found'
+		} else {
+			if(props.user_result[0].entities.hasOwnProperty('url')){
+			 	urlDisplay = props.user_result[0].entities.url.urls[0].display_url;
+			 	url = props.user_result[0].entities.url.urls[0].expanded_url;
+			} else {
+				 urlDisplay = '';
+				 url = '';
+			}
+		   tweetArray.push(<User 
+		   				profile_image={props.user_result[0].profile_image_url_https}
+		   				background_image={props.user_result[0].profile_banner_url}
+		   				name={props.user_result[0].name}
+		   				user_name={props.user_result[0].screen_name}
+		   				description={props.user_result[0].description}
+		   				location={props.user_result[0].location}
+		   				url_display={urlDisplay}
+		   				href={url}
+		   				joined={props.user_result[0].created_at}
+		   				following={props.user_result[0].friends_count}
+		   				followers={props.user_result[0].followers_count}/>
+		   				)
+		}
+		console.log('URL', props.user_result[0].entities.url.urls[0].display_url)
+		props.user_result[1].statuses.forEach((result) => {
+			if(result.entities.media){
+				media = result.entities.media[0].media_url;
+			} else {
+				media = '';
+			}
+			tweetArray.push(
+			  <Tweet 
+				text={result.full_text} 
+				name={result.user.name} 
+				profile_image={result.user.profile_image_url}
+				media={media}
+				userName={result.user.screen_name}
+				retweetCount={result.retweet_count}
+				favoriteCount={result.favorite_count}/>
+			)
+		})
 	} else {
 		tweetArray = ''
 	}
@@ -53,7 +94,7 @@ const SearchBar = (props) => {
 			  </InputGroup>
 			  <Button className={`search-type ${props.keyword_button_class}`} onClick={() => props.handleSearchType('keyword')}>KEYWORDS</Button>
 		  </div>
-		  <div>
+		  <div className="tweet-array">
 			{tweetArray}
 		  </div>
 	  </div>
