@@ -61,7 +61,7 @@ class App extends React.Component {
     let profiles = this.state.profileArray;
     profiles.forEach((profile) => {
       promises.push(
-      fetch('http://localhost:3000/random-users', {
+      fetch('https://shrouded-atoll-44911.herokuapp.com/random-users', {
         headers: {
           'search_value' : profile
         }
@@ -69,7 +69,7 @@ class App extends React.Component {
       .then(response => response.json())
       .then((data) => {  
            let profileInfo = data;
-           fetch('http://localhost:3000/random-users-tweets', {
+           fetch('https://shrouded-atoll-44911.herokuapp.com/random-users-tweets', {
             headers: {
               'search_value' : profile
              }
@@ -84,7 +84,6 @@ class App extends React.Component {
     }) 
 
     Promise.all(promises).then(() => {
-      console.log(randomProfiles)
       this.setState({
         randomProfiles : randomProfiles
       })
@@ -101,7 +100,7 @@ class App extends React.Component {
 
   handleSubmit(endpoint){
     let header = endpoint == 'search' || endpoint == 'search-user' ? this.state.search : this.state.random_search;
-    let url = 'http://localhost:3000/'+ endpoint
+    let url = 'https://shrouded-atoll-44911.herokuapp.com/'+ endpoint
     fetch(url, {
         headers: {
           'search_value' : header
