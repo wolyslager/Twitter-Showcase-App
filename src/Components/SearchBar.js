@@ -30,6 +30,7 @@ const SearchBar = (props) => {
 			)
 		})
 	} else if (props.user_result !== ''){
+		console.log(props.user_result)
 		if(props.user_result[0].hasOwnProperty('errors')){
 			tweetArray = 'User not found'
 		} else {
@@ -51,10 +52,10 @@ const SearchBar = (props) => {
 		   				href={url}
 		   				joined={props.user_result[0].created_at}
 		   				following={props.user_result[0].friends_count}
-		   				followers={props.user_result[0].followers_count}/>
+		   				followers={props.user_result[0].followers_count}
+		   				caller={'searchbar'}/>
 		   				)
 		}
-		console.log('URL', props.user_result[0].entities.url.urls[0].display_url)
 		props.user_result[1].statuses.forEach((result) => {
 			if(result.entities.media){
 				media = result.entities.media[0].media_url;

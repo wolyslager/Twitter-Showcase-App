@@ -24,7 +24,8 @@ const RandomButton = (props) => {
 	   				joined={profile[0].created_at}
 	   				following={profile[0].friends_count}
 	   				followers={profile[0].followers_count}
-	   				tweets={profile[1]}/>
+	   				tweets={profile[1]}
+	   				caller={'random'}/>
 				)
 	})
 	return (		

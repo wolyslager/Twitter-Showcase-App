@@ -10,14 +10,15 @@ import Button from 'react-bootstrap/Button';
 import Tweet from './Tweet.js'
 
 const User = (props) => {
+	console.log(props)
 	let tweetArray = [];
 	let media;
 	let urlDisplay;
 	let url;
 	const [show, setShow] = useState(false);
-	console.log('TWEETS USER.JS', props.tweets.statuses)
-	//generate tweets array
-	props.tweets.statuses.forEach((result) => {
+	//generate tweets array if being called by random page
+	if(props.caller == 'random'){
+		props.tweets.statuses.forEach((result) => {
 			if(result.entities.media){
 				media = result.entities.media[0].media_url;
 			} else {
@@ -34,6 +35,8 @@ const User = (props) => {
 				favoriteCount={result.favorite_count}/>
 			)
 		})
+	}
+	
 	if(props.media !== ''){
 	  return(
 	  	<div>

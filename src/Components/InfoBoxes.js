@@ -11,8 +11,8 @@ const InfoBoxes = () => {
 			    <Card.Title>What is it?</Card.Title>
 			    <hr className="horizontal"></hr>
 			    <Card.Text>
-			      This application lets you search for yout favorite Twitter topics and see the most recent Tweets about them! It also
-			      allows you to view a random selection of Tweets if you want. 
+			      This application lets you search for Tweets by user or by keyword/topic. The search will display the most recent and relevant tweets 
+			      based on the type of search you perform. You may also choose to look at random tweets. 
 			    </Card.Text>
 			  </Card.Body>
 			</Card>	
@@ -23,7 +23,7 @@ const InfoBoxes = () => {
 			    <hr className="horizontal"></hr>
 			    <Card.Text>
 			      Click on the "Find Tweets" tab and type in a topic that you are interested in into the search bar.
-			       If you're feeling lucky, go to the "Roll The Dice" tab and click on the bird!
+			       If you're feeling adventurous, go to the Random tab an click on a User!
 			    </Card.Text>
 			  </Card.Body>
 		   </Card>
@@ -34,7 +34,7 @@ const InfoBoxes = () => {
 			    <hr className="horizontal"></hr>
 			    <Card.Text>
 			      The Twitter API App has a ReactJS front end that communicates with a NodeJS server. The server 
-			      makes requests to the Twitter API and the response is then rendered here!
+			      makes requests to the Twitter API and the responses are then rendered here!
 			    </Card.Text>
 			  </Card.Body>
 			</Card>	
