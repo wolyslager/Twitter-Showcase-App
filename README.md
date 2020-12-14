@@ -2,7 +2,7 @@
 
 Twitter API application built with React.js
 
-Try it [here!](https://mighty-bayou-72324.herokuapp.com/)
+Try it [here!](https://infinite-shore-03171.herokuapp.com/)
 
 ![alt text](screenshot.png?raw=true)
 
