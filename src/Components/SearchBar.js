@@ -78,51 +78,126 @@ const SearchBar = (props) => {
 	}
 
 	if(props.search_type == 'keyword'){
-		return(
-		<div className="container">
-			<div className="searchbar-container">
-				<Button className={`search-type ${props.user_button_class}`} onClick={() => props.handleSearchType('users')}>USERS</Button>
-				<InputGroup className="mb-3" style={{width:"35em"}}>
-				    <FormControl
-				      placeholder="Search for your favorite topics..."
-				      aria-label="Recipient's username"
-				      aria-describedby="basic-addon2"
-				      onChange={props.handleChange}
-				    />
-			    <InputGroup.Append>
-			      <Button className="btn btn-primary" text="light" onClick={() => props.handleSubmit('search')}>Search</Button>
-			    </InputGroup.Append>
-			  </InputGroup>
-			  <Button className={`search-type ${props.keyword_button_class}`} onClick={() => props.handleSearchType('keyword')}>KEYWORDS</Button>
-		  </div>
-		  <div className="tweet-array">
-			{tweetArray}
-		  </div>
-	  </div>
-	);
+		if(props.loading === true){
+			return(
+				<div className="container">
+					<div className="instructions">
+						<h5>Select the "User" button if you want to make a search for specific usernames (enter the 
+							username without the @ in the search bar) or select the "Keyword" button if you want to 
+						make a search for specific words of phrases. </h5>
+					</div>
+					<div className="searchbar-container">
+						<Button className={`search-type ${props.user_button_class}`} onClick={() => props.handleSearchType('users')}>USERS</Button>
+						<InputGroup className="mb-3" style={{width:"35em"}}>
+						    <FormControl
+						      placeholder="Search for your favorite topics..."
+						      aria-label="Recipient's username"
+						      aria-describedby="basic-addon2"
+						      onChange={props.handleChange}
+						    />
+					    <InputGroup.Append>
+					      <Button className="btn btn-primary" text="light" onClick={() => props.handleSubmit('search')}>Search</Button>
+					    </InputGroup.Append>
+					  </InputGroup>
+					  <Button className={`search-type ${props.keyword_button_class}`} onClick={() => props.handleSearchType('keyword')}>KEYWORDS</Button>
+				  </div>
+				  <div className="loading">
+					  <div class="spinner-border text-primary" role="status" style={{width: "9em", height:"9em"}}>
+					  	<span class="sr-only">Loading...</span>
+					</div>
+				</div>
+			  </div>
+			);
+		} else {
+			return(
+				<div className="container">
+					<div className="instructions">
+						<h5>Select the "User" button if you want to make a search for specific usernames (enter the 
+							username without the @ in the search bar) or select the "Keyword" button if you want to 
+						make a search for specific words of phrases. </h5>
+					</div>
+					<div className="searchbar-container">
+						<Button className={`search-type ${props.user_button_class}`} onClick={() => props.handleSearchType('users')}>USERS</Button>
+						<InputGroup className="mb-3" style={{width:"35em"}}>
+						    <FormControl
+						      placeholder="Search for your favorite topics..."
+						      aria-label="Recipient's username"
+						      aria-describedby="basic-addon2"
+						      onChange={props.handleChange}
+						    />
+					    <InputGroup.Append>
+					      <Button className="btn btn-primary" text="light" onClick={() => props.handleSubmit('search')}>Search</Button>
+					    </InputGroup.Append>
+					  </InputGroup>
+					  <Button className={`search-type ${props.keyword_button_class}`} onClick={() => props.handleSearchType('keyword')}>KEYWORDS</Button>
+				  </div>
+				  <div className="tweet-array">
+					{tweetArray}
+				  </div>
+			  </div>
+			);
+		}
+		
   } else {
-  	return(
-		<div className="container">
-			<div className="searchbar-container">
-				<Button className={`search-type ${props.user_button_class}`} onClick={() => props.handleSearchType('users')}>USERS</Button>
-				<InputGroup className="mb-3" style={{width:"35em"}}>
-				    <FormControl
-				      placeholder="Search for your favorite topics..."
-				      aria-label="Recipient's username"
-				      aria-describedby="basic-addon2"
-				      onChange={props.handleChange}
-				    />
-			    <InputGroup.Append>
-			      <Button className="btn btn-primary" text="light" onClick={() => props.handleSubmit('search-user')}>Search</Button>
-			    </InputGroup.Append>
-			  </InputGroup>
-			  <Button className={`search-type ${props.keyword_button_class}`} onClick={() => props.handleSearchType('keyword')}>KEYWORDS</Button>
+  	if(props.loading === true){
+		 return(
+			<div className="container">
+				<div className="instructions">
+					<h5>Select the "User" button if you want to make a search for specific usernames (enter the 
+						username without the @ in the search bar) or select the "Keyword" button if you want to 
+					make a search for specific words of phrases. </h5>
+				</div>
+				<div className="searchbar-container">
+					<Button className={`search-type ${props.user_button_class}`} onClick={() => props.handleSearchType('users')}>USERS</Button>
+					<InputGroup className="mb-3" style={{width:"35em"}}>
+					    <FormControl
+					      placeholder="Search for your favorite topics..."
+					      aria-label="Recipient's username"
+					      aria-describedby="basic-addon2"
+					      onChange={props.handleChange}
+					    />
+				    <InputGroup.Append>
+				      <Button className="btn btn-primary" text="light" onClick={() => props.handleSubmit('search-user')}>Search</Button>
+				    </InputGroup.Append>
+				  </InputGroup>
+				  <Button className={`search-type ${props.keyword_button_class}`} onClick={() => props.handleSearchType('keyword')}>KEYWORDS</Button>
+			  </div>
+			  <div className="loading">
+				<div class="spinner-border text-primary" role="status" style={{width: "9em", height:"9em"}}>
+				  <span class="sr-only">Loading...</span>
+				</div>
+			  </div>
 		  </div>
-		  <div>
-			{tweetArray}
+	   );
+  	} else {
+  		return(
+			<div className="container">
+				<div className="instructions">
+					<h5>Select the "User" button if you want to make a search for specific usernames (enter the 
+						username without the @ in the search bar) or select the "Keyword" button if you want to 
+					make a search for specific words of phrases. </h5>
+				</div>
+				<div className="searchbar-container">
+					<Button className={`search-type ${props.user_button_class}`} onClick={() => props.handleSearchType('users')}>USERS</Button>
+					<InputGroup className="mb-3" style={{width:"35em"}}>
+					    <FormControl
+					      placeholder="Search for your favorite topics..."
+					      aria-label="Recipient's username"
+					      aria-describedby="basic-addon2"
+					      onChange={props.handleChange}
+					    />
+				    <InputGroup.Append>
+				      <Button className="btn btn-primary" text="light" onClick={() => props.handleSubmit('search-user')}>Search</Button>
+				    </InputGroup.Append>
+				  </InputGroup>
+				  <Button className={`search-type ${props.keyword_button_class}`} onClick={() => props.handleSearchType('keyword')}>KEYWORDS</Button>
+			  </div>
+			  <div>
+				{tweetArray}
+			  </div>
 		  </div>
-	  </div>
-	);
+		);
+  	}
   }
 }
 

@@ -27,3 +27,15 @@
 .tweet-array{
 	color: black;
 }
+
+.instructions{
+	color: white;
+	margin-bottom: 1em;
+	border: 1px solid white;
+	padding: 1em;
+	width: 85vw;
+}
+
+.loading{
+	margin-top: 4em;
+}

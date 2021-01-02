@@ -26,7 +26,8 @@ class App extends React.Component {
       button_keywords:'secondary',
       profileArray : ['playstation', 'ferrari', 'microsoft', 'realmadrid', 'patagonia', 'netflix', 'porsche', 'elonmusk'],
       randomProfiles : [],
-      randomProfilesTweets: []
+      randomProfilesTweets: [],
+      loading: false
     }
     this.changeTabs = this.changeTabs.bind(this);
     this.handleChange = this.handleChange.bind(this);
@@ -99,6 +100,7 @@ class App extends React.Component {
   }
 
   handleSubmit(endpoint){
+    this.setState({loading: true})
     let header = endpoint == 'search' || endpoint == 'search-user' ? this.state.search : this.state.random_search;
     let url = 'https://shrouded-atoll-44911.herokuapp.com/'+ endpoint
     fetch(url, {
@@ -111,12 +113,14 @@ class App extends React.Component {
         if(endpoint == 'search'){
           this.setState({
             result: data ,
-            user_result: ''
+            user_result: '',
+            loading: false
           })
         } else if (endpoint == 'search-user') {
           this.setState({
             user_result: data,
-            result: ''
+            result: '',
+            loading: false
           })
         } else {
           this.setState({
@@ -174,7 +178,8 @@ class App extends React.Component {
                 button_keywords = {this.state.button_keywords}
                 toggleButton={this.toggleButton}
                 search_type={this.state.search_type}
-                user_result={this.state.user_result}/>
+                user_result={this.state.user_result}
+                loading={this.state.loading}/>
           </div>
         </div>
       );
