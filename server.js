@@ -9,6 +9,9 @@ const axios = require('axios');
 app.use(cors());
 app.use(express.static(path.join(__dirname, "client/build")));
 
+
+app.get('/', (req, res) => {res.send('it is working!')})
+
 app.get('/search', (req, res) => {
 	url = 'https://api.twitter.com/1.1/search/tweets.json?q='+req.headers.search_value+'&result_type=popular&tweet_mode=extended '
 	fetch(url, {
