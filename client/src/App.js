@@ -62,7 +62,7 @@ class App extends React.Component {
     let profiles = this.state.profileArray;
     profiles.forEach((profile) => {
       promises.push(
-      fetch('https://shrouded-atoll-44911.herokuapp.com/random-users', {
+      fetch('/random-users', {
         headers: {
           'search_value' : profile
         }
@@ -119,7 +119,7 @@ class App extends React.Component {
         } else if (endpoint == 'search-user') {
           this.setState({
             user_result: data,
-            result: '',
+            result: '', 
             loading: false
           })
         } else {
