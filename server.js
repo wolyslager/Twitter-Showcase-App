@@ -7,8 +7,8 @@ require('dotenv').config();
 const axios = require('axios');
 
 app.use(cors());
-app.use(express.static(path.join(__dirname, "client/build")));
-
+app.use(express.static(path.join(__dirname, '/..client/build'), { maxAge: 86400000 }));
+// app.use(express.static(path.join(__dirname, "client/build")));
 
 app.get('/', (req, res) => {res.send('it is working!')})
 
