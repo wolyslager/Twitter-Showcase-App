@@ -9,6 +9,33 @@ const axios = require('axios');
 app.use(cors());
 app.use(express.static(path.join(__dirname, '/client/build')));
 
+let bearer;
+let getToken = () => {
+  if (bearer) return bearer;
+  const config = {
+    headers: {
+      "Content-Type": "application/x-www-form-urlencoded",
+    },
+    auth: {
+      username: process.env.API_KEY,
+      password: process.env.API_SECRET_KEY,
+    },
+  };
+  return axios
+    .post(
+      "https://api.twitter.com/oauth2/token",
+      "grant_type=client_credentials",
+      config
+    )
+    .then((response) => {
+      console.log(response.data.access_token);
+      return response.data.access_token;
+    })
+    .catch((error) => console.log(`Something went wrong: ${error}`));
+};
+
+getToken();
+
 app.get('/', (req, res) => {res.sendFile(path.join( __dirname, 'client/build' ))});
 
 app.get('/search', (req, res) => {
@@ -17,7 +44,7 @@ app.get('/search', (req, res) => {
 		headers: {
 			'Content-Type' : 'application/json',
 			'Accept' : 'application/json',
-			'Authorization': `Bearer AAAAAAAAAAAAAAAAAAAAALDmJwEAAAAAix80Mtkn6ulfEVbiljn5FGk17v4%3DeHJl3DMsy09qTW2IjCFDwz5Zu5Uja5vVSDEzWJAFluT32Dtiue`
+			'Authorization': `Bearer ${bearer}`
 		}
 	}).then(response => response.json())
 	  .then((data) =>{
@@ -32,7 +59,7 @@ app.get('/search-user', (req, res) => {
 		headers: {
 			'Content-Type' : 'application/json',
 			'Accept' : 'application/json',
-			'Authorization': 'Bearer AAAAAAAAAAAAAAAAAAAAALDmJwEAAAAAix80Mtkn6ulfEVbiljn5FGk17v4%3DeHJl3DMsy09qTW2IjCFDwz5Zu5Uja5vVSDEzWJAFluT32Dtiue'
+			'Authorization': `Bearer ${bearer}`
 		}
 	}).then(response => response.json())
 	  .then((data) =>{
@@ -42,7 +69,7 @@ app.get('/search-user', (req, res) => {
 				headers: {
 					'Content-Type' : 'application/json',
 					'Accept' : 'application/json',
-					'Authorization': 'Bearer AAAAAAAAAAAAAAAAAAAAALDmJwEAAAAAix80Mtkn6ulfEVbiljn5FGk17v4%3DeHJl3DMsy09qTW2IjCFDwz5Zu5Uja5vVSDEzWJAFluT32Dtiue'
+					'Authorization': `Bearer ${bearer}`
 				}
 			}).then(response => response.json())
 			  .then((data) =>{
@@ -59,7 +86,7 @@ app.get('/random-users', (req, res) => {
 		headers: {
 			'Content-Type' : 'application/json',
 			'Accept' : 'application/json',
-			'Authorization': 'Bearer AAAAAAAAAAAAAAAAAAAAALDmJwEAAAAAix80Mtkn6ulfEVbiljn5FGk17v4%3DeHJl3DMsy09qTW2IjCFDwz5Zu5Uja5vVSDEzWJAFluT32Dtiue'
+			'Authorization': `Bearer ${bearer}`
 		}
 	}).then(response => response.json())
 	  .then((data) =>{
@@ -74,11 +101,10 @@ app.get('/random-users-tweets', (req, res) => {
 		headers: {
 			'Content-Type' : 'application/json',
 			'Accept' : 'application/json',
-			'Authorization': 'Bearer AAAAAAAAAAAAAAAAAAAAALDmJwEAAAAAix80Mtkn6ulfEVbiljn5FGk17v4%3DeHJl3DMsy09qTW2IjCFDwz5Zu5Uja5vVSDEzWJAFluT32Dtiue'
+			'Authorization': `Bearer ${bearer}`
 		}
 	}).then(response => response.json())
 	  .then((data) =>{
-	  		console.log('-----------------', data)
 	  		res.send(data)
 	  })
 })
@@ -89,7 +115,7 @@ app.get('/random', (req, res) => {
 		headers: {
 			'Content-Type' : 'application/json',
 			'Accept' : 'application/json',
-			'Authorization': 'Bearer AAAAAAAAAAAAAAAAAAAAALDmJwEAAAAAix80Mtkn6ulfEVbiljn5FGk17v4%3DeHJl3DMsy09qTW2IjCFDwz5Zu5Uja5vVSDEzWJAFluT32Dtiue'
+			'Authorization': `Bearer ${bearer}`
 		}
 	}).then(response => response.json())
 	  .then((data) =>{
