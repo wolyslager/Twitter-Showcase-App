@@ -1,0 +1,17 @@
+{
+  "files": {
+    "js/0.chunk.js": "/twitter-showcase-app/js/0.chunk.js",
+    "js/0.chunk.js.map": "/twitter-showcase-app/js/0.chunk.js.map",
+    "js/1.chunk.js": "/twitter-showcase-app/js/1.chunk.js",
+    "js/1.chunk.js.map": "/twitter-showcase-app/js/1.chunk.js.map",
+    "main.js": "/twitter-showcase-app/js/main.chunk.js",
+    "main.js.map": "/twitter-showcase-app/js/main.chunk.js.map",
+    "runtime-main.js": "/twitter-showcase-app/js/bundle.js",
+    "runtime-main.js.map": "/twitter-showcase-app/js/bundle.js.map"
+  },
+  "entrypoints": [
+    "js/bundle.js",
+    "js/0.chunk.js",
+    "js/main.chunk.js"
+  ]
+}
