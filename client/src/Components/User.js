@@ -40,7 +40,7 @@ const User = (props) => {
 	if(props.media !== ''){
 	  return(
 	  	<div>
-			<Card style={{ width: '40rem', height: '30rem'}} className="pt-0 card-container" onClick={() => setShow(true)}>
+			<Card style={{ width: '40rem', height: '30rem'}} className="pt-0 card-container-user" onClick={() => setShow(true)}>
 			  <Card.Body>
 			    <Card.Title>
 			    	<img src={props.background_image} style={{width: '40rem'}} className="background-img"/>

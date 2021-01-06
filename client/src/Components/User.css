@@ -1,4 +1,4 @@
-.card-container{
+.card-container-user{
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
@@ -7,7 +7,7 @@
 	margin-top: 3rem;
 }
 
-.card-container:hover{
+.card-container-user:hover{
 	transform: scale(1.01);
 	cursor: pointer;
 }	

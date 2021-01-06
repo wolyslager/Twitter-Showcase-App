@@ -12,7 +12,7 @@ const InfoBoxes = () => {
 			    <hr className="horizontal"></hr>
 			    <Card.Text>
 			      This application lets you search for Tweets by user or by keyword/topic. The search will display the most recent and relevant tweets 
-			      based on the type of search you perform. You may also choose to look at random tweets. 
+			      based on the type of search you perform. You may also look at preselected profiles and tweets in the Misc tab. 
 			    </Card.Text>
 			  </Card.Body>
 			</Card>	
@@ -23,7 +23,7 @@ const InfoBoxes = () => {
 			    <hr className="horizontal"></hr>
 			    <Card.Text>
 			      Click on the "Find Tweets" tab and type in a topic that you are interested in into the search bar.
-			       If you're feeling adventurous, go to the Random tab an click on a User!
+			       If you're feeling adventurous, go to the Misc tab an click on a User!
 			    </Card.Text>
 			  </Card.Body>
 		   </Card>
