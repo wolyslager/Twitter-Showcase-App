@@ -99,3 +99,10 @@ body {
     transform: rotate(360deg);
   }
 }
+
+.random-page-no-bearer{
+   height: 100vh;
+  background-color: #151E29;
+  color: white;
+  font-size: 2em;
+}

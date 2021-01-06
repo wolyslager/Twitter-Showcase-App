@@ -1,38 +1,38 @@
 (this["webpackJsonptwitter-showcase-app"] = this["webpackJsonptwitter-showcase-app"] || []).push([["main"],{
 
-/***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/App.css":
-/*!************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js??ref--5-oneOf-4-1!./node_modules/postcss-loader/src??postcss!./src/App.css ***!
-  \************************************************************************************************************************/
+/***/ "../node_modules/css-loader/dist/cjs.js?!../node_modules/postcss-loader/src/index.js?!./src/App.css":
+/*!**************************************************************************************************************************!*\
+  !*** ../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-4-1!../node_modules/postcss-loader/src??postcss!./src/App.css ***!
+  \**************************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "../node_modules/css-loader/dist/runtime/api.js");
 /* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);
 // Imports
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(true);
 ___CSS_LOADER_EXPORT___.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Josefin+Sans);"]);
 // Module
-___CSS_LOADER_EXPORT___.push([module.i, "body {\n  font-family: 'Josefin Sans', cursive;\n}\n\n.title-infoboxes-container{\n  height: 100vh;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  flex-direction: column;\n  background-color: #151E29;\n}\n\n.infoboxes-footer-container{\n  display: flex;\n  flex-direction: column;\n  justify-content: space-between;\n  align-items: stretch;\n  margin-bottom: 0em;\n}\n\n.app-container-search{\n  height: 100vh;\n  background-color: #151E29;\n}\n\n.app-container-home{\n  height: 100vh;\n  background-color: #151E29;\n  color: white;\n}\n\n.random-page{\n    height: 100vh;\n    background-color: #151E29;\n}\n\n.random-container{\n  display: flex;\n  justify-content: center;\n  flex-direction: row;\n  flex-wrap: wrap;\n  background-color: #151E29;\n}\n\n.App-logo {\n  height: 40vmin;\n  pointer-events: none;\n}\n\n.title{\n  color: white;\n}\n\n.title-text{\n  font-size: 4rem;\n  color: white;\n}\n\n.search-container{\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  margin-top: 1em;\n  display: flex;\n  justify-content: center;\n  background-color: #151E29;\n}\n\n\n@media (prefers-reduced-motion: no-preference) {\n  .App-logo {\n    animation: App-logo-spin infinite 20s linear;\n  }\n}\n\n.App-header {\n  background-color: #282c34;\n  min-height: 100vh;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n  font-size: calc(10px + 2vmin);\n  color: white;\n}\n\n.App-link {\n  color: #61dafb;\n}\n\n@keyframes App-logo-spin {\n  from {\n    transform: rotate(0deg);\n  }\n  to {\n    transform: rotate(360deg);\n  }\n}\n", "",{"version":3,"sources":["webpack://src/App.css"],"names":[],"mappings":"AAEA;EACE,oCAAoC;AACtC;;AAEA;EACE,aAAa;EACb,aAAa;EACb,uBAAuB;EACvB,mBAAmB;EACnB,sBAAsB;EACtB,yBAAyB;AAC3B;;AAEA;EACE,aAAa;EACb,sBAAsB;EACtB,8BAA8B;EAC9B,oBAAoB;EACpB,kBAAkB;AACpB;;AAEA;EACE,aAAa;EACb,yBAAyB;AAC3B;;AAEA;EACE,aAAa;EACb,yBAAyB;EACzB,YAAY;AACd;;AAEA;IACI,aAAa;IACb,yBAAyB;AAC7B;;AAEA;EACE,aAAa;EACb,uBAAuB;EACvB,mBAAmB;EACnB,eAAe;EACf,yBAAyB;AAC3B;;AAEA;EACE,cAAc;EACd,oBAAoB;AACtB;;AAEA;EACE,YAAY;AACd;;AAEA;EACE,eAAe;EACf,YAAY;AACd;;AAEA;EACE,aAAa;EACb,sBAAsB;EACtB,mBAAmB;EACnB,eAAe;EACf,aAAa;EACb,uBAAuB;EACvB,yBAAyB;AAC3B;;;AAGA;EACE;IACE,4CAA4C;EAC9C;AACF;;AAEA;EACE,yBAAyB;EACzB,iBAAiB;EACjB,aAAa;EACb,sBAAsB;EACtB,mBAAmB;EACnB,uBAAuB;EACvB,6BAA6B;EAC7B,YAAY;AACd;;AAEA;EACE,cAAc;AAChB;;AAEA;EACE;IACE,uBAAuB;EACzB;EACA;IACE,yBAAyB;EAC3B;AACF","sourcesContent":["@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');\n\nbody {\n  font-family: 'Josefin Sans', cursive;\n}\n\n.title-infoboxes-container{\n  height: 100vh;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  flex-direction: column;\n  background-color: #151E29;\n}\n\n.infoboxes-footer-container{\n  display: flex;\n  flex-direction: column;\n  justify-content: space-between;\n  align-items: stretch;\n  margin-bottom: 0em;\n}\n\n.app-container-search{\n  height: 100vh;\n  background-color: #151E29;\n}\n\n.app-container-home{\n  height: 100vh;\n  background-color: #151E29;\n  color: white;\n}\n\n.random-page{\n    height: 100vh;\n    background-color: #151E29;\n}\n\n.random-container{\n  display: flex;\n  justify-content: center;\n  flex-direction: row;\n  flex-wrap: wrap;\n  background-color: #151E29;\n}\n\n.App-logo {\n  height: 40vmin;\n  pointer-events: none;\n}\n\n.title{\n  color: white;\n}\n\n.title-text{\n  font-size: 4rem;\n  color: white;\n}\n\n.search-container{\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  margin-top: 1em;\n  display: flex;\n  justify-content: center;\n  background-color: #151E29;\n}\n\n\n@media (prefers-reduced-motion: no-preference) {\n  .App-logo {\n    animation: App-logo-spin infinite 20s linear;\n  }\n}\n\n.App-header {\n  background-color: #282c34;\n  min-height: 100vh;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n  font-size: calc(10px + 2vmin);\n  color: white;\n}\n\n.App-link {\n  color: #61dafb;\n}\n\n@keyframes App-logo-spin {\n  from {\n    transform: rotate(0deg);\n  }\n  to {\n    transform: rotate(360deg);\n  }\n}\n"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.i, "body {\n  font-family: 'Josefin Sans', cursive;\n}\n\n.title-infoboxes-container{\n  height: 100vh;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  flex-direction: column;\n  background-color: #151E29;\n}\n\n.infoboxes-footer-container{\n  display: flex;\n  flex-direction: column;\n  justify-content: space-between;\n  align-items: stretch;\n  margin-bottom: 0em;\n}\n\n.app-container-search{\n  height: 100vh;\n  background-color: #151E29;\n}\n\n.app-container-home{\n  height: 100vh;\n  background-color: #151E29;\n  color: white;\n}\n\n.random-page{\n    height: 100vh;\n    background-color: #151E29;\n}\n\n.random-container{\n  display: flex;\n  justify-content: center;\n  flex-direction: row;\n  flex-wrap: wrap;\n  background-color: #151E29;\n}\n\n.App-logo {\n  height: 40vmin;\n  pointer-events: none;\n}\n\n.title{\n  color: white;\n}\n\n.title-text{\n  font-size: 4rem;\n  color: white;\n}\n\n.search-container{\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  margin-top: 1em;\n  display: flex;\n  justify-content: center;\n  background-color: #151E29;\n}\n\n\n@media (prefers-reduced-motion: no-preference) {\n  .App-logo {\n    animation: App-logo-spin infinite 20s linear;\n  }\n}\n\n.App-header {\n  background-color: #282c34;\n  min-height: 100vh;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n  font-size: calc(10px + 2vmin);\n  color: white;\n}\n\n.App-link {\n  color: #61dafb;\n}\n\n@keyframes App-logo-spin {\n  from {\n    transform: rotate(0deg);\n  }\n  to {\n    transform: rotate(360deg);\n  }\n}\n\n.random-page-no-bearer{\n   height: 100vh;\n  background-color: #151E29;\n  color: white;\n  font-size: 2em;\n}\n", "",{"version":3,"sources":["webpack://src/App.css"],"names":[],"mappings":"AAEA;EACE,oCAAoC;AACtC;;AAEA;EACE,aAAa;EACb,aAAa;EACb,uBAAuB;EACvB,mBAAmB;EACnB,sBAAsB;EACtB,yBAAyB;AAC3B;;AAEA;EACE,aAAa;EACb,sBAAsB;EACtB,8BAA8B;EAC9B,oBAAoB;EACpB,kBAAkB;AACpB;;AAEA;EACE,aAAa;EACb,yBAAyB;AAC3B;;AAEA;EACE,aAAa;EACb,yBAAyB;EACzB,YAAY;AACd;;AAEA;IACI,aAAa;IACb,yBAAyB;AAC7B;;AAEA;EACE,aAAa;EACb,uBAAuB;EACvB,mBAAmB;EACnB,eAAe;EACf,yBAAyB;AAC3B;;AAEA;EACE,cAAc;EACd,oBAAoB;AACtB;;AAEA;EACE,YAAY;AACd;;AAEA;EACE,eAAe;EACf,YAAY;AACd;;AAEA;EACE,aAAa;EACb,sBAAsB;EACtB,mBAAmB;EACnB,eAAe;EACf,aAAa;EACb,uBAAuB;EACvB,yBAAyB;AAC3B;;;AAGA;EACE;IACE,4CAA4C;EAC9C;AACF;;AAEA;EACE,yBAAyB;EACzB,iBAAiB;EACjB,aAAa;EACb,sBAAsB;EACtB,mBAAmB;EACnB,uBAAuB;EACvB,6BAA6B;EAC7B,YAAY;AACd;;AAEA;EACE,cAAc;AAChB;;AAEA;EACE;IACE,uBAAuB;EACzB;EACA;IACE,yBAAyB;EAC3B;AACF;;AAEA;GACG,aAAa;EACd,yBAAyB;EACzB,YAAY;EACZ,cAAc;AAChB","sourcesContent":["@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');\n\nbody {\n  font-family: 'Josefin Sans', cursive;\n}\n\n.title-infoboxes-container{\n  height: 100vh;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  flex-direction: column;\n  background-color: #151E29;\n}\n\n.infoboxes-footer-container{\n  display: flex;\n  flex-direction: column;\n  justify-content: space-between;\n  align-items: stretch;\n  margin-bottom: 0em;\n}\n\n.app-container-search{\n  height: 100vh;\n  background-color: #151E29;\n}\n\n.app-container-home{\n  height: 100vh;\n  background-color: #151E29;\n  color: white;\n}\n\n.random-page{\n    height: 100vh;\n    background-color: #151E29;\n}\n\n.random-container{\n  display: flex;\n  justify-content: center;\n  flex-direction: row;\n  flex-wrap: wrap;\n  background-color: #151E29;\n}\n\n.App-logo {\n  height: 40vmin;\n  pointer-events: none;\n}\n\n.title{\n  color: white;\n}\n\n.title-text{\n  font-size: 4rem;\n  color: white;\n}\n\n.search-container{\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  margin-top: 1em;\n  display: flex;\n  justify-content: center;\n  background-color: #151E29;\n}\n\n\n@media (prefers-reduced-motion: no-preference) {\n  .App-logo {\n    animation: App-logo-spin infinite 20s linear;\n  }\n}\n\n.App-header {\n  background-color: #282c34;\n  min-height: 100vh;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n  font-size: calc(10px + 2vmin);\n  color: white;\n}\n\n.App-link {\n  color: #61dafb;\n}\n\n@keyframes App-logo-spin {\n  from {\n    transform: rotate(0deg);\n  }\n  to {\n    transform: rotate(360deg);\n  }\n}\n\n.random-page-no-bearer{\n   height: 100vh;\n  background-color: #151E29;\n  color: white;\n  font-size: 2em;\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
 
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/Components/Footer.css":
-/*!**************************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js??ref--5-oneOf-4-1!./node_modules/postcss-loader/src??postcss!./src/Components/Footer.css ***!
-  \**************************************************************************************************************************************/
+/***/ "../node_modules/css-loader/dist/cjs.js?!../node_modules/postcss-loader/src/index.js?!./src/Components/Footer.css":
+/*!****************************************************************************************************************************************!*\
+  !*** ../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-4-1!../node_modules/postcss-loader/src??postcss!./src/Components/Footer.css ***!
+  \****************************************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "../node_modules/css-loader/dist/runtime/api.js");
 /* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);
 // Imports
 
@@ -45,16 +45,16 @@ ___CSS_LOADER_EXPORT___.push([module.i, ".footer{\n\tbackground: #151E29;\n\tcol
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/Components/InfoBoxes.css":
-/*!*****************************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js??ref--5-oneOf-4-1!./node_modules/postcss-loader/src??postcss!./src/Components/InfoBoxes.css ***!
-  \*****************************************************************************************************************************************/
+/***/ "../node_modules/css-loader/dist/cjs.js?!../node_modules/postcss-loader/src/index.js?!./src/Components/InfoBoxes.css":
+/*!*******************************************************************************************************************************************!*\
+  !*** ../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-4-1!../node_modules/postcss-loader/src??postcss!./src/Components/InfoBoxes.css ***!
+  \*******************************************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "../node_modules/css-loader/dist/runtime/api.js");
 /* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);
 // Imports
 
@@ -67,16 +67,16 @@ ___CSS_LOADER_EXPORT___.push([module.i, ".card-container{\n\tdisplay: flex;\n\tf
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/Components/RandomButton.css":
-/*!********************************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js??ref--5-oneOf-4-1!./node_modules/postcss-loader/src??postcss!./src/Components/RandomButton.css ***!
-  \********************************************************************************************************************************************/
+/***/ "../node_modules/css-loader/dist/cjs.js?!../node_modules/postcss-loader/src/index.js?!./src/Components/RandomButton.css":
+/*!**********************************************************************************************************************************************!*\
+  !*** ../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-4-1!../node_modules/postcss-loader/src??postcss!./src/Components/RandomButton.css ***!
+  \**********************************************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "../node_modules/css-loader/dist/runtime/api.js");
 /* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);
 // Imports
 
@@ -89,41 +89,41 @@ ___CSS_LOADER_EXPORT___.push([module.i, ".card-container-profiles{\n\tdisplay: f
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/Components/SearchBar.css":
-/*!*****************************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js??ref--5-oneOf-4-1!./node_modules/postcss-loader/src??postcss!./src/Components/SearchBar.css ***!
-  \*****************************************************************************************************************************************/
+/***/ "../node_modules/css-loader/dist/cjs.js?!../node_modules/postcss-loader/src/index.js?!./src/Components/SearchBar.css":
+/*!*******************************************************************************************************************************************!*\
+  !*** ../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-4-1!../node_modules/postcss-loader/src??postcss!./src/Components/SearchBar.css ***!
+  \*******************************************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "../node_modules/css-loader/dist/runtime/api.js");
 /* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_css_loader_dist_cjs_js_ref_5_oneOf_4_1_node_modules_postcss_loader_src_index_js_postcss_node_modules_bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! -!../../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-4-1!../../node_modules/postcss-loader/src??postcss!../../node_modules/bootstrap/dist/css/bootstrap.min.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/bootstrap/dist/css/bootstrap.min.css");
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_ref_5_oneOf_4_1_node_modules_postcss_loader_src_index_js_postcss_node_modules_bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! -!../../../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-4-1!../../../node_modules/postcss-loader/src??postcss!../../../node_modules/bootstrap/dist/css/bootstrap.min.css */ "../node_modules/css-loader/dist/cjs.js?!../node_modules/postcss-loader/src/index.js?!../node_modules/bootstrap/dist/css/bootstrap.min.css");
 // Imports
 
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(true);
 ___CSS_LOADER_EXPORT___.i(_node_modules_css_loader_dist_cjs_js_ref_5_oneOf_4_1_node_modules_postcss_loader_src_index_js_postcss_node_modules_bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_1__["default"]);
 // Module
-___CSS_LOADER_EXPORT___.push([module.i, ".container{\n\tdisplay: flex;\n\tflex-direction: column;\n\tjustify-content: center;\n\talign-items: center;\n}\n\n.button{\n  margin:1em;\n  width: 10em;\n  border: 1px solid black;\n}\n\n.searchbar-container{\n\twidth: 100vw;\n\tdisplay: flex;\n\tjustify-content: space-around;\n\talign-items: flex-start;\n}\n\n.search-type{\n\twidth: 8em;\n}\n\n.tweet-array{\n\tcolor: black;\n}\n\n.instructions{\n\tcolor: white;\n\tmargin-bottom: 1em;\n\tborder: 1px solid white;\n\tpadding: 1em;\n\twidth: 85vw;\n}\n\n.loading{\n\tmargin-top: 4em;\n}", "",{"version":3,"sources":["webpack://src/Components/SearchBar.css"],"names":[],"mappings":"AAEA;CACC,aAAa;CACb,sBAAsB;CACtB,uBAAuB;CACvB,mBAAmB;AACpB;;AAEA;EACE,UAAU;EACV,WAAW;EACX,uBAAuB;AACzB;;AAEA;CACC,YAAY;CACZ,aAAa;CACb,6BAA6B;CAC7B,uBAAuB;AACxB;;AAEA;CACC,UAAU;AACX;;AAEA;CACC,YAAY;AACb;;AAEA;CACC,YAAY;CACZ,kBAAkB;CAClB,uBAAuB;CACvB,YAAY;CACZ,WAAW;AACZ;;AAEA;CACC,eAAe;AAChB","sourcesContent":["@import 'bootstrap/dist/css/bootstrap.min.css';\n\n.container{\n\tdisplay: flex;\n\tflex-direction: column;\n\tjustify-content: center;\n\talign-items: center;\n}\n\n.button{\n  margin:1em;\n  width: 10em;\n  border: 1px solid black;\n}\n\n.searchbar-container{\n\twidth: 100vw;\n\tdisplay: flex;\n\tjustify-content: space-around;\n\talign-items: flex-start;\n}\n\n.search-type{\n\twidth: 8em;\n}\n\n.tweet-array{\n\tcolor: black;\n}\n\n.instructions{\n\tcolor: white;\n\tmargin-bottom: 1em;\n\tborder: 1px solid white;\n\tpadding: 1em;\n\twidth: 85vw;\n}\n\n.loading{\n\tmargin-top: 4em;\n}"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.i, ".container{\n\tdisplay: flex;\n\tflex-direction: column;\n\tjustify-content: center;\n\talign-items: center;\n}\n\n.button{\n  margin:1em;\n  width: 10em;\n  border: 1px solid black;\n}\n\n.searchbar-container{\n\twidth: 100vw;\n\tdisplay: flex;\n\tjustify-content: space-around;\n\talign-items: flex-start;\n}\n\n.search-type{\n\twidth: 8em;\n}\n\n.tweet-array{\n\tcolor: black;\n}\n\n.missing-bearer-message{\n\tcolor: white;\n\tfont-size: 2em;\n}\n\n.instructions{\n\tcolor: white;\n\tmargin-bottom: 1em;\n\tborder: 1px solid white;\n\tpadding: 1em;\n\twidth: 85vw;\n}\n\n.loading{\n\tmargin-top: 4em;\n}", "",{"version":3,"sources":["webpack://src/Components/SearchBar.css"],"names":[],"mappings":"AAEA;CACC,aAAa;CACb,sBAAsB;CACtB,uBAAuB;CACvB,mBAAmB;AACpB;;AAEA;EACE,UAAU;EACV,WAAW;EACX,uBAAuB;AACzB;;AAEA;CACC,YAAY;CACZ,aAAa;CACb,6BAA6B;CAC7B,uBAAuB;AACxB;;AAEA;CACC,UAAU;AACX;;AAEA;CACC,YAAY;AACb;;AAEA;CACC,YAAY;CACZ,cAAc;AACf;;AAEA;CACC,YAAY;CACZ,kBAAkB;CAClB,uBAAuB;CACvB,YAAY;CACZ,WAAW;AACZ;;AAEA;CACC,eAAe;AAChB","sourcesContent":["@import 'bootstrap/dist/css/bootstrap.min.css';\n\n.container{\n\tdisplay: flex;\n\tflex-direction: column;\n\tjustify-content: center;\n\talign-items: center;\n}\n\n.button{\n  margin:1em;\n  width: 10em;\n  border: 1px solid black;\n}\n\n.searchbar-container{\n\twidth: 100vw;\n\tdisplay: flex;\n\tjustify-content: space-around;\n\talign-items: flex-start;\n}\n\n.search-type{\n\twidth: 8em;\n}\n\n.tweet-array{\n\tcolor: black;\n}\n\n.missing-bearer-message{\n\tcolor: white;\n\tfont-size: 2em;\n}\n\n.instructions{\n\tcolor: white;\n\tmargin-bottom: 1em;\n\tborder: 1px solid white;\n\tpadding: 1em;\n\twidth: 85vw;\n}\n\n.loading{\n\tmargin-top: 4em;\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
 
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/Components/Tweet.css":
-/*!*************************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js??ref--5-oneOf-4-1!./node_modules/postcss-loader/src??postcss!./src/Components/Tweet.css ***!
-  \*************************************************************************************************************************************/
+/***/ "../node_modules/css-loader/dist/cjs.js?!../node_modules/postcss-loader/src/index.js?!./src/Components/Tweet.css":
+/*!***************************************************************************************************************************************!*\
+  !*** ../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-4-1!../node_modules/postcss-loader/src??postcss!./src/Components/Tweet.css ***!
+  \***************************************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "../node_modules/css-loader/dist/runtime/api.js");
 /* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);
 // Imports
 
@@ -136,16 +136,16 @@ ___CSS_LOADER_EXPORT___.push([module.i, ".profile-img{\n\theight: 3rem;\n\twidth
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/Components/User.css":
-/*!************************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js??ref--5-oneOf-4-1!./node_modules/postcss-loader/src??postcss!./src/Components/User.css ***!
-  \************************************************************************************************************************************/
+/***/ "../node_modules/css-loader/dist/cjs.js?!../node_modules/postcss-loader/src/index.js?!./src/Components/User.css":
+/*!**************************************************************************************************************************************!*\
+  !*** ../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-4-1!../node_modules/postcss-loader/src??postcss!./src/Components/User.css ***!
+  \**************************************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "../node_modules/css-loader/dist/runtime/api.js");
 /* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);
 // Imports
 
@@ -158,16 +158,16 @@ ___CSS_LOADER_EXPORT___.push([module.i, ".card-container{\n\tdisplay: flex;\n\tf
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/index.css":
-/*!**************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js??ref--5-oneOf-4-1!./node_modules/postcss-loader/src??postcss!./src/index.css ***!
-  \**************************************************************************************************************************/
+/***/ "../node_modules/css-loader/dist/cjs.js?!../node_modules/postcss-loader/src/index.js?!./src/index.css":
+/*!****************************************************************************************************************************!*\
+  !*** ../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-4-1!../node_modules/postcss-loader/src??postcss!./src/index.css ***!
+  \****************************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "../node_modules/css-loader/dist/runtime/api.js");
 /* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);
 // Imports
 
@@ -188,8 +188,8 @@ ___CSS_LOADER_EXPORT___.push([module.i, "body {\n  margin: 0;\n  font-family: -a
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-var api = __webpack_require__(/*! ../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
-            var content = __webpack_require__(/*! !../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-4-1!../node_modules/postcss-loader/src??postcss!./App.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/App.css");
+var api = __webpack_require__(/*! ../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+            var content = __webpack_require__(/*! !../../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-4-1!../../node_modules/postcss-loader/src??postcss!./App.css */ "../node_modules/css-loader/dist/cjs.js?!../node_modules/postcss-loader/src/index.js?!./src/App.css");
 
             content = content.__esModule ? content.default : content;
 
@@ -219,13 +219,13 @@ module.exports = content.locals || {};
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ "./node_modules/react/jsx-dev-runtime.js");
+/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ "../node_modules/react/jsx-dev-runtime.js");
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _App_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./App.css */ "./src/App.css");
 /* harmony import */ var _App_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_App_css__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./index.css */ "./src/index.css");
 /* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_index_css__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react */ "../node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var _Components_Navbar__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Components/Navbar */ "./src/Components/Navbar.js");
 /* harmony import */ var _Components_InfoBoxes__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Components/InfoBoxes */ "./src/Components/InfoBoxes.js");
@@ -233,7 +233,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Components_Tweet__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./Components/Tweet */ "./src/Components/Tweet.js");
 /* harmony import */ var _Components_Footer__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./Components/Footer */ "./src/Components/Footer.js");
 /* harmony import */ var _Components_RandomButton__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./Components/RandomButton */ "./src/Components/RandomButton.js");
-/* harmony import */ var react_bootstrap_Button__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! react-bootstrap/Button */ "./node_modules/react-bootstrap/esm/Button.js");
+/* harmony import */ var react_bootstrap_Button__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! react-bootstrap/Button */ "../node_modules/react-bootstrap/esm/Button.js");
 
 var _jsxFileName = "/Users/williamolyslager/Desktop/Twitter-Showcase-App/client/src/App.js";
 
@@ -265,19 +265,27 @@ class App extends react__WEBPACK_IMPORTED_MODULE_3___default.a.Component {
       profileArray: ['playstation', 'ferrari', 'microsoft', 'realmadrid', 'patagonia', 'netflix', 'porsche', 'elonmusk'],
       randomProfiles: [],
       randomProfilesTweets: [],
-      loading: false
+      loading: false,
+      bearerActive: true
     };
     this.changeTabs = this.changeTabs.bind(this);
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleRandomChange = this.handleRandomChange.bind(this);
     this.handleSearchType = this.handleSearchType.bind(this);
+    this.handleKeyPress = this.handleKeyPress.bind(this);
   }
 
   changeTabs(page) {
     this.setState({
       page: page
     });
+  }
+
+  handleKeyPress(event) {
+    if (event.charCode === 13) {
+      this.handleSubmit();
+    }
   }
 
   handleChange(event) {
@@ -297,7 +305,20 @@ class App extends react__WEBPACK_IMPORTED_MODULE_3___default.a.Component {
   componentDidMount() {
     let randomProfiles = [];
     let promises = [];
-    let profiles = this.state.profileArray;
+    let profiles = this.state.profileArray; //find out if bearer is active
+
+    fetch('/bearer-active').then(response => response.json()).then(data => {
+      if (data.response === 'true') {
+        this.setState({
+          bearerActive: true
+        });
+      } else {
+        this.setState({
+          bearerActive: false
+        });
+      }
+    });
+    console.log(this.state.bearerActive);
     profiles.forEach(profile => {
       promises.push(fetch('/random-users', {
         headers: {
@@ -305,7 +326,7 @@ class App extends react__WEBPACK_IMPORTED_MODULE_3___default.a.Component {
         }
       }).then(response => response.json()).then(data => {
         let profileInfo = data;
-        fetch('https://shrouded-atoll-44911.herokuapp.com/random-users-tweets', {
+        fetch('/random-users-tweets', {
           headers: {
             'search_value': profile
           }
@@ -335,7 +356,7 @@ class App extends react__WEBPACK_IMPORTED_MODULE_3___default.a.Component {
       loading: true
     });
     let header = endpoint == 'search' || endpoint == 'search-user' ? this.state.search : this.state.random_search;
-    let url = 'https://shrouded-atoll-44911.herokuapp.com/' + endpoint;
+    let url = '/' + endpoint;
     fetch(url, {
       headers: {
         'search_value': header
@@ -385,7 +406,7 @@ class App extends react__WEBPACK_IMPORTED_MODULE_3___default.a.Component {
           changeTabs: this.changeTabs
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 153,
+          lineNumber: 177,
           columnNumber: 11
         }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
           className: "title-infoboxes-container",
@@ -396,37 +417,37 @@ class App extends react__WEBPACK_IMPORTED_MODULE_3___default.a.Component {
               children: "Twitter API Application"
             }, void 0, false, {
               fileName: _jsxFileName,
-              lineNumber: 156,
+              lineNumber: 180,
               columnNumber: 15
             }, this)
           }, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 155,
+            lineNumber: 179,
             columnNumber: 13
           }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
             className: "infoboxes-footer-container",
             children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_Components_InfoBoxes__WEBPACK_IMPORTED_MODULE_5__["default"], {}, void 0, false, {
               fileName: _jsxFileName,
-              lineNumber: 159,
+              lineNumber: 183,
               columnNumber: 15
             }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_Components_Footer__WEBPACK_IMPORTED_MODULE_8__["default"], {}, void 0, false, {
               fileName: _jsxFileName,
-              lineNumber: 160,
+              lineNumber: 184,
               columnNumber: 16
             }, this)]
           }, void 0, true, {
             fileName: _jsxFileName,
-            lineNumber: 158,
+            lineNumber: 182,
             columnNumber: 13
           }, this)]
         }, void 0, true, {
           fileName: _jsxFileName,
-          lineNumber: 154,
+          lineNumber: 178,
           columnNumber: 11
         }, this)]
       }, void 0, true, {
         fileName: _jsxFileName,
-        lineNumber: 152,
+        lineNumber: 176,
         columnNumber: 9
       }, this);
     } else if (this.state.page == 2) {
@@ -436,7 +457,7 @@ class App extends react__WEBPACK_IMPORTED_MODULE_3___default.a.Component {
           changeTabs: this.changeTabs
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 168,
+          lineNumber: 192,
           columnNumber: 11
         }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
           className: "search-container",
@@ -446,6 +467,7 @@ class App extends react__WEBPACK_IMPORTED_MODULE_3___default.a.Component {
             user_button_class: this.state.user_button_class,
             handleChange: this.handleChange,
             handleSubmit: this.handleSubmit,
+            handleKeyPress: this.handleKeyPress,
             result: this.state.result,
             button_users: this.state.button_users,
             button_keywords: this.state.button_keywords,
@@ -455,48 +477,85 @@ class App extends react__WEBPACK_IMPORTED_MODULE_3___default.a.Component {
             loading: this.state.loading
           }, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 170,
+            lineNumber: 194,
             columnNumber: 13
           }, this)
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 169,
+          lineNumber: 193,
           columnNumber: 11
         }, this)]
       }, void 0, true, {
         fileName: _jsxFileName,
-        lineNumber: 167,
+        lineNumber: 191,
         columnNumber: 9
       }, this);
     } else {
-      return /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
-        className: "random-page",
-        children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_Components_Navbar__WEBPACK_IMPORTED_MODULE_4__["default"], {
-          changeTabs: this.changeTabs
-        }, void 0, false, {
-          fileName: _jsxFileName,
-          lineNumber: 189,
-          columnNumber: 11
-        }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
-          className: "random-container",
-          children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_Components_RandomButton__WEBPACK_IMPORTED_MODULE_9__["default"], {
-            user_result: this.state.randomProfiles,
-            user_result_tweets: this.state.randomProfilesTweets
+      if (this.state.bearerActive === true) {
+        return /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
+          className: "random-page",
+          children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_Components_Navbar__WEBPACK_IMPORTED_MODULE_4__["default"], {
+            changeTabs: this.changeTabs
           }, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 191,
+            lineNumber: 215,
             columnNumber: 13
-          }, this)
-        }, void 0, false, {
+          }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
+            className: "random-container",
+            children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_Components_RandomButton__WEBPACK_IMPORTED_MODULE_9__["default"], {
+              user_result: this.state.randomProfiles,
+              user_result_tweets: this.state.randomProfilesTweets
+            }, void 0, false, {
+              fileName: _jsxFileName,
+              lineNumber: 217,
+              columnNumber: 15
+            }, this)
+          }, void 0, false, {
+            fileName: _jsxFileName,
+            lineNumber: 216,
+            columnNumber: 13
+          }, this)]
+        }, void 0, true, {
           fileName: _jsxFileName,
-          lineNumber: 190,
+          lineNumber: 214,
           columnNumber: 11
-        }, this)]
-      }, void 0, true, {
-        fileName: _jsxFileName,
-        lineNumber: 188,
-        columnNumber: 9
-      }, this);
+        }, this);
+      } else {
+        return /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
+          className: "random-page",
+          children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_Components_Navbar__WEBPACK_IMPORTED_MODULE_4__["default"], {
+            changeTabs: this.changeTabs
+          }, void 0, false, {
+            fileName: _jsxFileName,
+            lineNumber: 226,
+            columnNumber: 13
+          }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
+            className: "random-container",
+            children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
+              className: "random-page-no-bearer",
+              children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
+                children: "Please follow the instructions on the github repo for this project to use it! https://github.com/wolyslager/Twitter-Showcase-App"
+              }, void 0, false, {
+                fileName: _jsxFileName,
+                lineNumber: 229,
+                columnNumber: 19
+              }, this)
+            }, void 0, false, {
+              fileName: _jsxFileName,
+              lineNumber: 228,
+              columnNumber: 17
+            }, this)
+          }, void 0, false, {
+            fileName: _jsxFileName,
+            lineNumber: 227,
+            columnNumber: 13
+          }, this)]
+        }, void 0, true, {
+          fileName: _jsxFileName,
+          lineNumber: 225,
+          columnNumber: 11
+        }, this);
+      }
     }
   }
 
@@ -513,8 +572,8 @@ class App extends react__WEBPACK_IMPORTED_MODULE_3___default.a.Component {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-var api = __webpack_require__(/*! ../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
-            var content = __webpack_require__(/*! !../../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-4-1!../../node_modules/postcss-loader/src??postcss!./Footer.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/Components/Footer.css");
+var api = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+            var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-4-1!../../../node_modules/postcss-loader/src??postcss!./Footer.css */ "../node_modules/css-loader/dist/cjs.js?!../node_modules/postcss-loader/src/index.js?!./src/Components/Footer.css");
 
             content = content.__esModule ? content.default : content;
 
@@ -544,14 +603,14 @@ module.exports = content.locals || {};
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ "./node_modules/react/jsx-dev-runtime.js");
+/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ "../node_modules/react/jsx-dev-runtime.js");
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "../node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _Footer_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Footer.css */ "./src/Components/Footer.css");
 /* harmony import */ var _Footer_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_Footer_css__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @fortawesome/react-fontawesome */ "./node_modules/@fortawesome/react-fontawesome/index.es.js");
-/* harmony import */ var _fortawesome_free_brands_svg_icons__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @fortawesome/free-brands-svg-icons */ "./node_modules/@fortawesome/free-brands-svg-icons/index.es.js");
+/* harmony import */ var _fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @fortawesome/react-fontawesome */ "../node_modules/@fortawesome/react-fontawesome/index.es.js");
+/* harmony import */ var _fortawesome_free_brands_svg_icons__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @fortawesome/free-brands-svg-icons */ "../node_modules/@fortawesome/free-brands-svg-icons/index.es.js");
 
 var _jsxFileName = "/Users/williamolyslager/Desktop/Twitter-Showcase-App/client/src/Components/Footer.js";
 
@@ -670,8 +729,8 @@ const Footer = () => {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-var api = __webpack_require__(/*! ../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
-            var content = __webpack_require__(/*! !../../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-4-1!../../node_modules/postcss-loader/src??postcss!./InfoBoxes.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/Components/InfoBoxes.css");
+var api = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+            var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-4-1!../../../node_modules/postcss-loader/src??postcss!./InfoBoxes.css */ "../node_modules/css-loader/dist/cjs.js?!../node_modules/postcss-loader/src/index.js?!./src/Components/InfoBoxes.css");
 
             content = content.__esModule ? content.default : content;
 
@@ -701,13 +760,13 @@ module.exports = content.locals || {};
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ "./node_modules/react/jsx-dev-runtime.js");
+/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ "../node_modules/react/jsx-dev-runtime.js");
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "../node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _InfoBoxes_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./InfoBoxes.css */ "./src/Components/InfoBoxes.css");
 /* harmony import */ var _InfoBoxes_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_InfoBoxes_css__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var react_bootstrap_Card__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-bootstrap/Card */ "./node_modules/react-bootstrap/esm/Card.js");
+/* harmony import */ var react_bootstrap_Card__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-bootstrap/Card */ "../node_modules/react-bootstrap/esm/Card.js");
 
 var _jsxFileName = "/Users/williamolyslager/Desktop/Twitter-Showcase-App/client/src/Components/InfoBoxes.js";
 
@@ -849,17 +908,17 @@ const InfoBoxes = () => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ "./node_modules/react/jsx-dev-runtime.js");
+/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ "../node_modules/react/jsx-dev-runtime.js");
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "../node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var react_bootstrap_Navbar__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-bootstrap/Navbar */ "./node_modules/react-bootstrap/esm/Navbar.js");
-/* harmony import */ var react_bootstrap_Form__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-bootstrap/Form */ "./node_modules/react-bootstrap/esm/Form.js");
-/* harmony import */ var react_bootstrap_FormControl__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-bootstrap/FormControl */ "./node_modules/react-bootstrap/esm/FormControl.js");
-/* harmony import */ var react_bootstrap_Nav__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-bootstrap/Nav */ "./node_modules/react-bootstrap/esm/Nav.js");
-/* harmony import */ var react_bootstrap_Button__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-bootstrap/Button */ "./node_modules/react-bootstrap/esm/Button.js");
-/* harmony import */ var _fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @fortawesome/react-fontawesome */ "./node_modules/@fortawesome/react-fontawesome/index.es.js");
-/* harmony import */ var _fortawesome_free_brands_svg_icons__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @fortawesome/free-brands-svg-icons */ "./node_modules/@fortawesome/free-brands-svg-icons/index.es.js");
+/* harmony import */ var react_bootstrap_Navbar__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-bootstrap/Navbar */ "../node_modules/react-bootstrap/esm/Navbar.js");
+/* harmony import */ var react_bootstrap_Form__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-bootstrap/Form */ "../node_modules/react-bootstrap/esm/Form.js");
+/* harmony import */ var react_bootstrap_FormControl__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-bootstrap/FormControl */ "../node_modules/react-bootstrap/esm/FormControl.js");
+/* harmony import */ var react_bootstrap_Nav__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-bootstrap/Nav */ "../node_modules/react-bootstrap/esm/Nav.js");
+/* harmony import */ var react_bootstrap_Button__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-bootstrap/Button */ "../node_modules/react-bootstrap/esm/Button.js");
+/* harmony import */ var _fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @fortawesome/react-fontawesome */ "../node_modules/@fortawesome/react-fontawesome/index.es.js");
+/* harmony import */ var _fortawesome_free_brands_svg_icons__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @fortawesome/free-brands-svg-icons */ "../node_modules/@fortawesome/free-brands-svg-icons/index.es.js");
 /* harmony import */ var _SearchBar_css__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./SearchBar.css */ "./src/Components/SearchBar.css");
 /* harmony import */ var _SearchBar_css__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_SearchBar_css__WEBPACK_IMPORTED_MODULE_9__);
 
@@ -953,8 +1012,8 @@ const NavbarComp = props => {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-var api = __webpack_require__(/*! ../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
-            var content = __webpack_require__(/*! !../../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-4-1!../../node_modules/postcss-loader/src??postcss!./RandomButton.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/Components/RandomButton.css");
+var api = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+            var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-4-1!../../../node_modules/postcss-loader/src??postcss!./RandomButton.css */ "../node_modules/css-loader/dist/cjs.js?!../node_modules/postcss-loader/src/index.js?!./src/Components/RandomButton.css");
 
             content = content.__esModule ? content.default : content;
 
@@ -984,16 +1043,16 @@ module.exports = content.locals || {};
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ "./node_modules/react/jsx-dev-runtime.js");
+/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ "../node_modules/react/jsx-dev-runtime.js");
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "../node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _RandomButton_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./RandomButton.css */ "./src/Components/RandomButton.css");
 /* harmony import */ var _RandomButton_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_RandomButton_css__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _Tweet_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Tweet.js */ "./src/Components/Tweet.js");
-/* harmony import */ var react_bootstrap_Button__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-bootstrap/Button */ "./node_modules/react-bootstrap/esm/Button.js");
-/* harmony import */ var _fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @fortawesome/react-fontawesome */ "./node_modules/@fortawesome/react-fontawesome/index.es.js");
-/* harmony import */ var _fortawesome_free_brands_svg_icons__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @fortawesome/free-brands-svg-icons */ "./node_modules/@fortawesome/free-brands-svg-icons/index.es.js");
+/* harmony import */ var react_bootstrap_Button__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-bootstrap/Button */ "../node_modules/react-bootstrap/esm/Button.js");
+/* harmony import */ var _fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @fortawesome/react-fontawesome */ "../node_modules/@fortawesome/react-fontawesome/index.es.js");
+/* harmony import */ var _fortawesome_free_brands_svg_icons__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @fortawesome/free-brands-svg-icons */ "../node_modules/@fortawesome/free-brands-svg-icons/index.es.js");
 /* harmony import */ var _User_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./User.js */ "./src/Components/User.js");
 
 var _jsxFileName = "/Users/williamolyslager/Desktop/Twitter-Showcase-App/client/src/Components/RandomButton.js";
@@ -1050,8 +1109,8 @@ const RandomButton = props => {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-var api = __webpack_require__(/*! ../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
-            var content = __webpack_require__(/*! !../../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-4-1!../../node_modules/postcss-loader/src??postcss!./SearchBar.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/Components/SearchBar.css");
+var api = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+            var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-4-1!../../../node_modules/postcss-loader/src??postcss!./SearchBar.css */ "../node_modules/css-loader/dist/cjs.js?!../node_modules/postcss-loader/src/index.js?!./src/Components/SearchBar.css");
 
             content = content.__esModule ? content.default : content;
 
@@ -1081,17 +1140,18 @@ module.exports = content.locals || {};
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ "./node_modules/react/jsx-dev-runtime.js");
+/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ "../node_modules/react/jsx-dev-runtime.js");
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "../node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var react_bootstrap_InputGroup__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-bootstrap/InputGroup */ "./node_modules/react-bootstrap/esm/InputGroup.js");
-/* harmony import */ var react_bootstrap_FormControl__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-bootstrap/FormControl */ "./node_modules/react-bootstrap/esm/FormControl.js");
-/* harmony import */ var react_bootstrap_Button__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-bootstrap/Button */ "./node_modules/react-bootstrap/esm/Button.js");
-/* harmony import */ var _Tweet_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Tweet.js */ "./src/Components/Tweet.js");
-/* harmony import */ var _User_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./User.js */ "./src/Components/User.js");
-/* harmony import */ var _SearchBar_css__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./SearchBar.css */ "./src/Components/SearchBar.css");
-/* harmony import */ var _SearchBar_css__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_SearchBar_css__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var react_bootstrap_InputGroup__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-bootstrap/InputGroup */ "../node_modules/react-bootstrap/esm/InputGroup.js");
+/* harmony import */ var react_bootstrap_FormControl__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-bootstrap/FormControl */ "../node_modules/react-bootstrap/esm/FormControl.js");
+/* harmony import */ var react_bootstrap_Button__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-bootstrap/Button */ "../node_modules/react-bootstrap/esm/Button.js");
+/* harmony import */ var react_bootstrap_Form__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-bootstrap/Form */ "../node_modules/react-bootstrap/esm/Form.js");
+/* harmony import */ var _Tweet_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./Tweet.js */ "./src/Components/Tweet.js");
+/* harmony import */ var _User_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./User.js */ "./src/Components/User.js");
+/* harmony import */ var _SearchBar_css__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./SearchBar.css */ "./src/Components/SearchBar.css");
+/* harmony import */ var _SearchBar_css__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_SearchBar_css__WEBPACK_IMPORTED_MODULE_8__);
 
 var _jsxFileName = "/Users/williamolyslager/Desktop/Twitter-Showcase-App/client/src/Components/SearchBar.js";
 
@@ -1102,89 +1162,99 @@ var _jsxFileName = "/Users/williamolyslager/Desktop/Twitter-Showcase-App/client/
 
 
 
+
 const SearchBar = props => {
+  let missingBearerMessage;
   let tweetArray = [];
   let media;
   let urlDisplay;
   let url;
 
   if (props.result !== '') {
-    props.result.forEach(result => {
-      if (result.entities.media) {
-        media = result.entities.media[0].media_url;
-      } else {
-        media = '';
-      }
-
-      tweetArray.push( /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_Tweet_js__WEBPACK_IMPORTED_MODULE_5__["default"], {
-        text: result.full_text,
-        name: result.user.name,
-        profile_image: result.user.profile_image_url,
-        media: media,
-        userName: result.user.screen_name,
-        retweetCount: result.retweet_count,
-        favoriteCount: result.favorite_count
-      }, void 0, false, {
-        fileName: _jsxFileName,
-        lineNumber: 22,
-        columnNumber: 6
-      }, undefined));
-    });
-  } else if (props.user_result !== '') {
-    console.log(props.user_result);
-
-    if (props.user_result[0].hasOwnProperty('errors')) {
-      tweetArray = 'User not found';
+    if (props.result.hasOwnProperty('response')) {
+      missingBearerMessage = props.result.response;
     } else {
-      if (props.user_result[0].entities.hasOwnProperty('url')) {
-        urlDisplay = props.user_result[0].entities.url.urls[0].display_url;
-        url = props.user_result[0].entities.url.urls[0].expanded_url;
-      } else {
-        urlDisplay = '';
-        url = '';
-      }
+      props.result.forEach(result => {
+        if (result.entities.media) {
+          media = result.entities.media[0].media_url;
+        } else {
+          media = '';
+        }
 
-      tweetArray.push( /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_User_js__WEBPACK_IMPORTED_MODULE_6__["default"], {
-        profile_image: props.user_result[0].profile_image_url_https,
-        background_image: props.user_result[0].profile_banner_url,
-        name: props.user_result[0].name,
-        user_name: props.user_result[0].screen_name,
-        description: props.user_result[0].description,
-        location: props.user_result[0].location,
-        url_display: urlDisplay,
-        href: url,
-        joined: props.user_result[0].created_at,
-        following: props.user_result[0].friends_count,
-        followers: props.user_result[0].followers_count,
-        caller: 'searchbar'
-      }, void 0, false, {
-        fileName: _jsxFileName,
-        lineNumber: 44,
-        columnNumber: 22
-      }, undefined));
+        tweetArray.push( /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_Tweet_js__WEBPACK_IMPORTED_MODULE_6__["default"], {
+          text: result.full_text,
+          name: result.user.name,
+          profile_image: result.user.profile_image_url,
+          media: media,
+          userName: result.user.screen_name,
+          retweetCount: result.retweet_count,
+          favoriteCount: result.favorite_count
+        }, void 0, false, {
+          fileName: _jsxFileName,
+          lineNumber: 27,
+          columnNumber: 6
+        }, undefined));
+      });
     }
+  } else if (props.user_result !== '') {
+    if (props.user_result.hasOwnProperty('response')) {
+      missingBearerMessage = props.user_result.response;
+    } else {
+      console.log(props.user_result);
 
-    props.user_result[1].statuses.forEach(result => {
-      if (result.entities.media) {
-        media = result.entities.media[0].media_url;
+      if (props.user_result[0].hasOwnProperty('errors')) {
+        tweetArray = 'User not found';
       } else {
-        media = '';
+        if (props.user_result[0].entities.hasOwnProperty('url')) {
+          urlDisplay = props.user_result[0].entities.url.urls[0].display_url;
+          url = props.user_result[0].entities.url.urls[0].expanded_url;
+        } else {
+          urlDisplay = '';
+          url = '';
+        }
+
+        tweetArray.push( /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_User_js__WEBPACK_IMPORTED_MODULE_7__["default"], {
+          profile_image: props.user_result[0].profile_image_url_https,
+          background_image: props.user_result[0].profile_banner_url,
+          name: props.user_result[0].name,
+          user_name: props.user_result[0].screen_name,
+          description: props.user_result[0].description,
+          location: props.user_result[0].location,
+          url_display: urlDisplay,
+          href: url,
+          joined: props.user_result[0].created_at,
+          following: props.user_result[0].friends_count,
+          followers: props.user_result[0].followers_count,
+          caller: 'searchbar'
+        }, void 0, false, {
+          fileName: _jsxFileName,
+          lineNumber: 53,
+          columnNumber: 22
+        }, undefined));
       }
 
-      tweetArray.push( /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_Tweet_js__WEBPACK_IMPORTED_MODULE_5__["default"], {
-        text: result.full_text,
-        name: result.user.name,
-        profile_image: result.user.profile_image_url,
-        media: media,
-        userName: result.user.screen_name,
-        retweetCount: result.retweet_count,
-        favoriteCount: result.favorite_count
-      }, void 0, false, {
-        fileName: _jsxFileName,
-        lineNumber: 66,
-        columnNumber: 6
-      }, undefined));
-    });
+      props.user_result[1].statuses.forEach(result => {
+        if (result.entities.media) {
+          media = result.entities.media[0].media_url;
+        } else {
+          media = '';
+        }
+
+        tweetArray.push( /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_Tweet_js__WEBPACK_IMPORTED_MODULE_6__["default"], {
+          text: result.full_text,
+          name: result.user.name,
+          profile_image: result.user.profile_image_url,
+          media: media,
+          userName: result.user.screen_name,
+          retweetCount: result.retweet_count,
+          favoriteCount: result.favorite_count
+        }, void 0, false, {
+          fileName: _jsxFileName,
+          lineNumber: 75,
+          columnNumber: 6
+        }, undefined));
+      });
+    }
   } else {
     tweetArray = '';
   }
@@ -1199,12 +1269,12 @@ const SearchBar = props => {
             children: "Select the \"User\" button if you want to make a search for specific usernames (enter the username without the @ in the search bar) or select the \"Keyword\" button if you want to make a search for specific words of phrases. "
           }, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 85,
+            lineNumber: 95,
             columnNumber: 7
           }, undefined)
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 84,
+          lineNumber: 94,
           columnNumber: 6
         }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
           className: "searchbar-container",
@@ -1214,7 +1284,7 @@ const SearchBar = props => {
             children: "USERS"
           }, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 90,
+            lineNumber: 100,
             columnNumber: 7
           }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(react_bootstrap_InputGroup__WEBPACK_IMPORTED_MODULE_2__["default"], {
             className: "mb-3",
@@ -1228,27 +1298,28 @@ const SearchBar = props => {
               onChange: props.handleChange
             }, void 0, false, {
               fileName: _jsxFileName,
-              lineNumber: 92,
+              lineNumber: 102,
               columnNumber: 11
             }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(react_bootstrap_InputGroup__WEBPACK_IMPORTED_MODULE_2__["default"].Append, {
               children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(react_bootstrap_Button__WEBPACK_IMPORTED_MODULE_4__["default"], {
                 className: "btn btn-primary",
                 text: "light",
+                type: "submit",
                 onClick: () => props.handleSubmit('search'),
                 children: "Search"
               }, void 0, false, {
                 fileName: _jsxFileName,
-                lineNumber: 99,
+                lineNumber: 109,
                 columnNumber: 12
               }, undefined)
             }, void 0, false, {
               fileName: _jsxFileName,
-              lineNumber: 98,
+              lineNumber: 108,
               columnNumber: 10
             }, undefined)]
           }, void 0, true, {
             fileName: _jsxFileName,
-            lineNumber: 91,
+            lineNumber: 101,
             columnNumber: 7
           }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(react_bootstrap_Button__WEBPACK_IMPORTED_MODULE_4__["default"], {
             className: `search-type ${props.keyword_button_class}`,
@@ -1256,12 +1327,12 @@ const SearchBar = props => {
             children: "KEYWORDS"
           }, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 102,
+            lineNumber: 112,
             columnNumber: 8
           }, undefined)]
         }, void 0, true, {
           fileName: _jsxFileName,
-          lineNumber: 89,
+          lineNumber: 99,
           columnNumber: 6
         }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
           className: "loading",
@@ -1277,22 +1348,22 @@ const SearchBar = props => {
               children: "Loading..."
             }, void 0, false, {
               fileName: _jsxFileName,
-              lineNumber: 106,
+              lineNumber: 116,
               columnNumber: 9
             }, undefined)
           }, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 105,
+            lineNumber: 115,
             columnNumber: 8
           }, undefined)
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 104,
+          lineNumber: 114,
           columnNumber: 7
         }, undefined)]
       }, void 0, true, {
         fileName: _jsxFileName,
-        lineNumber: 83,
+        lineNumber: 93,
         columnNumber: 5
       }, undefined);
     } else {
@@ -1304,12 +1375,12 @@ const SearchBar = props => {
             children: "Select the \"User\" button if you want to make a search for specific usernames (enter the username without the @ in the search bar) or select the \"Keyword\" button if you want to make a search for specific words of phrases. "
           }, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 115,
+            lineNumber: 125,
             columnNumber: 7
           }, undefined)
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 114,
+          lineNumber: 124,
           columnNumber: 6
         }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
           className: "searchbar-container",
@@ -1319,7 +1390,7 @@ const SearchBar = props => {
             children: "USERS"
           }, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 120,
+            lineNumber: 130,
             columnNumber: 7
           }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(react_bootstrap_InputGroup__WEBPACK_IMPORTED_MODULE_2__["default"], {
             className: "mb-3",
@@ -1330,10 +1401,15 @@ const SearchBar = props => {
               placeholder: "Search for your favorite topics...",
               "aria-label": "Recipient's username",
               "aria-describedby": "basic-addon2",
-              onChange: props.handleChange
+              onChange: props.handleChange,
+              onKeyPress: event => {
+                if (event.charCode === 13) {
+                  props.handleSubmit('search');
+                }
+              }
             }, void 0, false, {
               fileName: _jsxFileName,
-              lineNumber: 122,
+              lineNumber: 132,
               columnNumber: 11
             }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(react_bootstrap_InputGroup__WEBPACK_IMPORTED_MODULE_2__["default"].Append, {
               children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(react_bootstrap_Button__WEBPACK_IMPORTED_MODULE_4__["default"], {
@@ -1343,17 +1419,17 @@ const SearchBar = props => {
                 children: "Search"
               }, void 0, false, {
                 fileName: _jsxFileName,
-                lineNumber: 129,
+                lineNumber: 140,
                 columnNumber: 12
               }, undefined)
             }, void 0, false, {
               fileName: _jsxFileName,
-              lineNumber: 128,
+              lineNumber: 139,
               columnNumber: 10
             }, undefined)]
           }, void 0, true, {
             fileName: _jsxFileName,
-            lineNumber: 121,
+            lineNumber: 131,
             columnNumber: 7
           }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(react_bootstrap_Button__WEBPACK_IMPORTED_MODULE_4__["default"], {
             className: `search-type ${props.keyword_button_class}`,
@@ -1361,24 +1437,31 @@ const SearchBar = props => {
             children: "KEYWORDS"
           }, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 132,
+            lineNumber: 143,
             columnNumber: 8
           }, undefined)]
         }, void 0, true, {
           fileName: _jsxFileName,
-          lineNumber: 119,
+          lineNumber: 129,
           columnNumber: 6
         }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
           className: "tweet-array",
           children: tweetArray
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 134,
+          lineNumber: 145,
+          columnNumber: 7
+        }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
+          className: "missing-bearer-message",
+          children: missingBearerMessage
+        }, void 0, false, {
+          fileName: _jsxFileName,
+          lineNumber: 148,
           columnNumber: 7
         }, undefined)]
       }, void 0, true, {
         fileName: _jsxFileName,
-        lineNumber: 113,
+        lineNumber: 123,
         columnNumber: 5
       }, undefined);
     }
@@ -1392,12 +1475,12 @@ const SearchBar = props => {
             children: "Select the \"User\" button if you want to make a search for specific usernames (enter the username without the @ in the search bar) or select the \"Keyword\" button if you want to make a search for specific words of phrases. "
           }, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 146,
+            lineNumber: 160,
             columnNumber: 6
           }, undefined)
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 145,
+          lineNumber: 159,
           columnNumber: 5
         }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
           className: "searchbar-container",
@@ -1407,7 +1490,7 @@ const SearchBar = props => {
             children: "USERS"
           }, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 151,
+            lineNumber: 165,
             columnNumber: 6
           }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(react_bootstrap_InputGroup__WEBPACK_IMPORTED_MODULE_2__["default"], {
             className: "mb-3",
@@ -1421,7 +1504,7 @@ const SearchBar = props => {
               onChange: props.handleChange
             }, void 0, false, {
               fileName: _jsxFileName,
-              lineNumber: 153,
+              lineNumber: 167,
               columnNumber: 10
             }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(react_bootstrap_InputGroup__WEBPACK_IMPORTED_MODULE_2__["default"].Append, {
               children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(react_bootstrap_Button__WEBPACK_IMPORTED_MODULE_4__["default"], {
@@ -1431,17 +1514,17 @@ const SearchBar = props => {
                 children: "Search"
               }, void 0, false, {
                 fileName: _jsxFileName,
-                lineNumber: 160,
+                lineNumber: 174,
                 columnNumber: 11
               }, undefined)
             }, void 0, false, {
               fileName: _jsxFileName,
-              lineNumber: 159,
+              lineNumber: 173,
               columnNumber: 9
             }, undefined)]
           }, void 0, true, {
             fileName: _jsxFileName,
-            lineNumber: 152,
+            lineNumber: 166,
             columnNumber: 6
           }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(react_bootstrap_Button__WEBPACK_IMPORTED_MODULE_4__["default"], {
             className: `search-type ${props.keyword_button_class}`,
@@ -1449,12 +1532,12 @@ const SearchBar = props => {
             children: "KEYWORDS"
           }, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 163,
+            lineNumber: 177,
             columnNumber: 7
           }, undefined)]
         }, void 0, true, {
           fileName: _jsxFileName,
-          lineNumber: 150,
+          lineNumber: 164,
           columnNumber: 5
         }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
           className: "loading",
@@ -1470,22 +1553,22 @@ const SearchBar = props => {
               children: "Loading..."
             }, void 0, false, {
               fileName: _jsxFileName,
-              lineNumber: 167,
+              lineNumber: 181,
               columnNumber: 7
             }, undefined)
           }, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 166,
+            lineNumber: 180,
             columnNumber: 5
           }, undefined)
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 165,
+          lineNumber: 179,
           columnNumber: 6
         }, undefined)]
       }, void 0, true, {
         fileName: _jsxFileName,
-        lineNumber: 144,
+        lineNumber: 158,
         columnNumber: 4
       }, undefined);
     } else {
@@ -1497,12 +1580,12 @@ const SearchBar = props => {
             children: "Select the \"User\" button if you want to make a search for specific usernames (enter the username without the @ in the search bar) or select the \"Keyword\" button if you want to make a search for specific words of phrases. "
           }, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 176,
+            lineNumber: 190,
             columnNumber: 6
           }, undefined)
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 175,
+          lineNumber: 189,
           columnNumber: 5
         }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
           className: "searchbar-container",
@@ -1512,7 +1595,7 @@ const SearchBar = props => {
             children: "USERS"
           }, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 181,
+            lineNumber: 195,
             columnNumber: 6
           }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(react_bootstrap_InputGroup__WEBPACK_IMPORTED_MODULE_2__["default"], {
             className: "mb-3",
@@ -1523,10 +1606,15 @@ const SearchBar = props => {
               placeholder: "Search for your favorite topics...",
               "aria-label": "Recipient's username",
               "aria-describedby": "basic-addon2",
-              onChange: props.handleChange
+              onChange: props.handleChange,
+              onKeyPress: event => {
+                if (event.charCode === 13) {
+                  props.handleSubmit('search-user');
+                }
+              }
             }, void 0, false, {
               fileName: _jsxFileName,
-              lineNumber: 183,
+              lineNumber: 197,
               columnNumber: 10
             }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(react_bootstrap_InputGroup__WEBPACK_IMPORTED_MODULE_2__["default"].Append, {
               children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(react_bootstrap_Button__WEBPACK_IMPORTED_MODULE_4__["default"], {
@@ -1536,17 +1624,17 @@ const SearchBar = props => {
                 children: "Search"
               }, void 0, false, {
                 fileName: _jsxFileName,
-                lineNumber: 190,
+                lineNumber: 205,
                 columnNumber: 11
               }, undefined)
             }, void 0, false, {
               fileName: _jsxFileName,
-              lineNumber: 189,
+              lineNumber: 204,
               columnNumber: 9
             }, undefined)]
           }, void 0, true, {
             fileName: _jsxFileName,
-            lineNumber: 182,
+            lineNumber: 196,
             columnNumber: 6
           }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(react_bootstrap_Button__WEBPACK_IMPORTED_MODULE_4__["default"], {
             className: `search-type ${props.keyword_button_class}`,
@@ -1554,23 +1642,30 @@ const SearchBar = props => {
             children: "KEYWORDS"
           }, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 193,
+            lineNumber: 208,
             columnNumber: 7
           }, undefined)]
         }, void 0, true, {
           fileName: _jsxFileName,
-          lineNumber: 180,
+          lineNumber: 194,
           columnNumber: 5
         }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
           children: tweetArray
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 195,
+          lineNumber: 210,
           columnNumber: 6
+        }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
+          className: "missing-bearer-message",
+          children: missingBearerMessage
+        }, void 0, false, {
+          fileName: _jsxFileName,
+          lineNumber: 213,
+          columnNumber: 7
         }, undefined)]
       }, void 0, true, {
         fileName: _jsxFileName,
-        lineNumber: 174,
+        lineNumber: 188,
         columnNumber: 4
       }, undefined);
     }
@@ -1588,8 +1683,8 @@ const SearchBar = props => {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-var api = __webpack_require__(/*! ../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
-            var content = __webpack_require__(/*! !../../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-4-1!../../node_modules/postcss-loader/src??postcss!./Tweet.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/Components/Tweet.css");
+var api = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+            var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-4-1!../../../node_modules/postcss-loader/src??postcss!./Tweet.css */ "../node_modules/css-loader/dist/cjs.js?!../node_modules/postcss-loader/src/index.js?!./src/Components/Tweet.css");
 
             content = content.__esModule ? content.default : content;
 
@@ -1619,16 +1714,16 @@ module.exports = content.locals || {};
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ "./node_modules/react/jsx-dev-runtime.js");
+/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ "../node_modules/react/jsx-dev-runtime.js");
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "../node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var react_bootstrap_Card__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-bootstrap/Card */ "./node_modules/react-bootstrap/esm/Card.js");
+/* harmony import */ var react_bootstrap_Card__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-bootstrap/Card */ "../node_modules/react-bootstrap/esm/Card.js");
 /* harmony import */ var _Tweet_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Tweet.css */ "./src/Components/Tweet.css");
 /* harmony import */ var _Tweet_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_Tweet_css__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @fortawesome/react-fontawesome */ "./node_modules/@fortawesome/react-fontawesome/index.es.js");
-/* harmony import */ var _fortawesome_free_brands_svg_icons__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @fortawesome/free-brands-svg-icons */ "./node_modules/@fortawesome/free-brands-svg-icons/index.es.js");
-/* harmony import */ var _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @fortawesome/free-solid-svg-icons */ "./node_modules/@fortawesome/free-solid-svg-icons/index.es.js");
+/* harmony import */ var _fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @fortawesome/react-fontawesome */ "../node_modules/@fortawesome/react-fontawesome/index.es.js");
+/* harmony import */ var _fortawesome_free_brands_svg_icons__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @fortawesome/free-brands-svg-icons */ "../node_modules/@fortawesome/free-brands-svg-icons/index.es.js");
+/* harmony import */ var _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @fortawesome/free-solid-svg-icons */ "../node_modules/@fortawesome/free-solid-svg-icons/index.es.js");
 
 var _jsxFileName = "/Users/williamolyslager/Desktop/Twitter-Showcase-App/client/src/Components/Tweet.js";
 
@@ -1817,8 +1912,8 @@ const Tweet = props => {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-var api = __webpack_require__(/*! ../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
-            var content = __webpack_require__(/*! !../../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-4-1!../../node_modules/postcss-loader/src??postcss!./User.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/Components/User.css");
+var api = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+            var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-4-1!../../../node_modules/postcss-loader/src??postcss!./User.css */ "../node_modules/css-loader/dist/cjs.js?!../node_modules/postcss-loader/src/index.js?!./src/Components/User.css");
 
             content = content.__esModule ? content.default : content;
 
@@ -1848,17 +1943,17 @@ module.exports = content.locals || {};
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ "./node_modules/react/jsx-dev-runtime.js");
+/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ "../node_modules/react/jsx-dev-runtime.js");
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "../node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var react_bootstrap_Card__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-bootstrap/Card */ "./node_modules/react-bootstrap/esm/Card.js");
+/* harmony import */ var react_bootstrap_Card__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-bootstrap/Card */ "../node_modules/react-bootstrap/esm/Card.js");
 /* harmony import */ var _User_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./User.css */ "./src/Components/User.css");
 /* harmony import */ var _User_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_User_css__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @fortawesome/react-fontawesome */ "./node_modules/@fortawesome/react-fontawesome/index.es.js");
-/* harmony import */ var _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @fortawesome/free-solid-svg-icons */ "./node_modules/@fortawesome/free-solid-svg-icons/index.es.js");
-/* harmony import */ var react_bootstrap_Modal__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-bootstrap/Modal */ "./node_modules/react-bootstrap/esm/Modal.js");
-/* harmony import */ var react_bootstrap_Button__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react-bootstrap/Button */ "./node_modules/react-bootstrap/esm/Button.js");
+/* harmony import */ var _fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @fortawesome/react-fontawesome */ "../node_modules/@fortawesome/react-fontawesome/index.es.js");
+/* harmony import */ var _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @fortawesome/free-solid-svg-icons */ "../node_modules/@fortawesome/free-solid-svg-icons/index.es.js");
+/* harmony import */ var react_bootstrap_Modal__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-bootstrap/Modal */ "../node_modules/react-bootstrap/esm/Modal.js");
+/* harmony import */ var react_bootstrap_Button__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react-bootstrap/Button */ "../node_modules/react-bootstrap/esm/Button.js");
 /* harmony import */ var _Tweet_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./Tweet.js */ "./src/Components/Tweet.js");
 
 
@@ -2128,8 +2223,8 @@ const User = props => {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-var api = __webpack_require__(/*! ../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
-            var content = __webpack_require__(/*! !../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-4-1!../node_modules/postcss-loader/src??postcss!./index.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/index.css");
+var api = __webpack_require__(/*! ../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+            var content = __webpack_require__(/*! !../../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-4-1!../../node_modules/postcss-loader/src??postcss!./index.css */ "../node_modules/css-loader/dist/cjs.js?!../node_modules/postcss-loader/src/index.js?!./src/index.css");
 
             content = content.__esModule ? content.default : content;
 
@@ -2159,11 +2254,11 @@ module.exports = content.locals || {};
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ "./node_modules/react/jsx-dev-runtime.js");
+/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ "../node_modules/react/jsx-dev-runtime.js");
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "../node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-dom */ "../node_modules/react-dom/index.js");
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./index.css */ "./src/index.css");
 /* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_index_css__WEBPACK_IMPORTED_MODULE_3__);
@@ -2205,7 +2300,7 @@ Object(_reportWebVitals__WEBPACK_IMPORTED_MODULE_5__["default"])();
 __webpack_require__.r(__webpack_exports__);
 const reportWebVitals = onPerfEntry => {
   if (onPerfEntry && onPerfEntry instanceof Function) {
-    __webpack_require__.e(/*! import() */ 1).then(__webpack_require__.bind(null, /*! web-vitals */ "./node_modules/web-vitals/dist/web-vitals.es5.min.js")).then(({
+    Promise.resolve().then(function webpackMissingModule() { var e = new Error("Cannot find module 'web-vitals'"); e.code = 'MODULE_NOT_FOUND'; throw e; }).then(({
       getCLS,
       getFID,
       getFCP,
@@ -2226,13 +2321,13 @@ const reportWebVitals = onPerfEntry => {
 /***/ }),
 
 /***/ 0:
-/*!**********************************************************************************!*\
-  !*** multi ./node_modules/react-dev-utils/webpackHotDevClient.js ./src/index.js ***!
-  \**********************************************************************************/
+/*!***********************************************************************************!*\
+  !*** multi ../node_modules/react-dev-utils/webpackHotDevClient.js ./src/index.js ***!
+  \***********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Users/williamolyslager/Desktop/Twitter-Showcase-App/client/node_modules/react-dev-utils/webpackHotDevClient.js */"./node_modules/react-dev-utils/webpackHotDevClient.js");
+__webpack_require__(/*! /Users/williamolyslager/Desktop/Twitter-Showcase-App/node_modules/react-dev-utils/webpackHotDevClient.js */"../node_modules/react-dev-utils/webpackHotDevClient.js");
 module.exports = __webpack_require__(/*! /Users/williamolyslager/Desktop/Twitter-Showcase-App/client/src/index.js */"./src/index.js");
 
 

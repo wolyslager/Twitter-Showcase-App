@@ -11,7 +11,6 @@ app.use(express.static(path.join(__dirname, '/client/build')));
 
 let bearer;
 let getToken = () => {
-  if (bearer) return bearer;
   const config = {
     headers: {
       "Content-Type": "application/x-www-form-urlencoded",
@@ -29,31 +28,46 @@ let getToken = () => {
     )
     .then((response) => {
       console.log(response.data.access_token);
-      return response.data.access_token;
+      bearer = response.data.access_token;
     })
     .catch((error) => console.log(`Something went wrong: ${error}`));
 };
 
 getToken();
 
-app.get('/', (req, res) => {res.sendFile(path.join( __dirname, 'client/build' ))});
+app.get('/', (req, res) => {res.sendFile(path.join( __dirname, '/client/build' ))});
 
 app.get('/search', (req, res) => {
-	url = 'https://api.twitter.com/1.1/search/tweets.json?q='+req.headers.search_value+'&result_type=popular&tweet_mode=extended '
-	fetch(url, {
-		headers: {
-			'Content-Type' : 'application/json',
-			'Accept' : 'application/json',
-			'Authorization': `Bearer ${bearer}`
+	if(bearer === undefined){
+		res.send({'response':'Please follow the instructions in the github repo for this project to be able to use it https://github.com/wolyslager/Twitter-Showcase-App'})
+	} else {
+		url = 'https://api.twitter.com/1.1/search/tweets.json?q='+req.headers.search_value+'&result_type=popular&tweet_mode=extended '
+		fetch(url, {
+			headers: {
+				'Content-Type' : 'application/json',
+				'Accept' : 'application/json',
+				'Authorization': `Bearer ${bearer}`
+			}
+		}).then(response => response.json())
+		  .then((data) =>{
+		  		res.send(data.statuses)
+		  })
 		}
-	}).then(response => response.json())
-	  .then((data) =>{
-	  		res.send(data.statuses)
-	  })	
+})
+
+app.get('/bearer-active', (req, res) => {
+	if(bearer === undefined){
+		res.send({'response':'false'})
+	} else {
+		res.send({'response':'true'})
+	}
 })
 
 app.get('/search-user', (req, res) => {
-	let dataArray = []
+	if(bearer === undefined){
+		res.send({'response':'Please follow the instructions in the github repo for this project to be able to use it https://github.com/wolyslager/Twitter-Showcase-App'})
+	} else {
+		let dataArray = []
 	url = 'https://api.twitter.com/1.1/users/show.json?screen_name=' + req.headers.search_value
 	fetch(url, {
 		headers: {
@@ -77,21 +91,25 @@ app.get('/search-user', (req, res) => {
 			  		res.send(dataArray)
 			  })
 	  })
-	
+	} 	
 })
 
 app.get('/random-users', (req, res) => {
-	url = 'https://api.twitter.com/1.1/users/show.json?screen_name=' + req.headers.search_value
-	fetch(url, {
+	if(bearer === undefined){
+		res.send({'response':'Please follow the instructions in the github repo for this project to be able to use it https://github.com/wolyslager/Twitter-Showcase-App'})
+	} else {
+		url = 'https://api.twitter.com/1.1/users/show.json?screen_name=' + req.headers.search_value
+		fetch(url, {
 		headers: {
 			'Content-Type' : 'application/json',
 			'Accept' : 'application/json',
 			'Authorization': `Bearer ${bearer}`
 		}
-	}).then(response => response.json())
+		}).then(response => response.json())
 	  .then((data) =>{
 	  		res.send(data)
 	  })
+	}
 })
 
 app.get('/random-users-tweets', (req, res) => {

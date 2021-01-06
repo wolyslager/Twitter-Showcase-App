@@ -28,6 +28,11 @@
 	color: black;
 }
 
+.missing-bearer-message{
+	color: white;
+	font-size: 2em;
+}
+
 .instructions{
 	color: white;
 	margin-bottom: 1em;

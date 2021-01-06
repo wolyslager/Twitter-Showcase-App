@@ -22,7 +22,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "watch":"cra-build-watch",
+    "watch": "cra-build-watch",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
@@ -50,5 +50,16 @@
   "devDependencies": {
     "gh-pages": "^3.1.0",
     "nodemon": "^2.0.6"
+  },
+  "description": "Twitter API application built with React.js",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wolyslager/Twitter-Showcase-App.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wolyslager/Twitter-Showcase-App/issues"
   }
 }

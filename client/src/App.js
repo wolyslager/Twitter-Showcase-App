@@ -27,19 +27,27 @@ class App extends React.Component {
       profileArray : ['playstation', 'ferrari', 'microsoft', 'realmadrid', 'patagonia', 'netflix', 'porsche', 'elonmusk'],
       randomProfiles : [],
       randomProfilesTweets: [],
-      loading: false
+      loading: false, 
+      bearerActive: true
     }
     this.changeTabs = this.changeTabs.bind(this);
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleRandomChange = this.handleRandomChange.bind(this);
     this.handleSearchType = this.handleSearchType.bind(this);
+    this.handleKeyPress = this.handleKeyPress.bind(this);
   }
 
   changeTabs(page){
     this.setState({
       page: page
     }) 
+  }
+
+  handleKeyPress(event){
+    if(event.charCode === 13){
+      this.handleSubmit()
+    }
   }
 
   handleChange(event){
@@ -60,6 +68,21 @@ class App extends React.Component {
     let randomProfiles = [];
     let promises = [];
     let profiles = this.state.profileArray;
+    //find out if bearer is active
+    fetch('/bearer-active')
+          .then(response => response.json())
+          .then((data) => {
+              if(data.response === 'true'){
+                this.setState({
+                  bearerActive: true
+                })
+              } else {
+                this.setState({
+                  bearerActive: false
+                })
+              }
+          })
+    console.log(this.state.bearerActive)
     profiles.forEach((profile) => {
       promises.push(
       fetch('/random-users', {
@@ -89,6 +112,7 @@ class App extends React.Component {
         randomProfiles : randomProfiles
       })
     })
+
   }
 
   componentDidUpdate(prevProps, prevState){
@@ -173,6 +197,7 @@ class App extends React.Component {
                 user_button_class = {this.state.user_button_class}
                 handleChange={this.handleChange} 
                 handleSubmit={this.handleSubmit} 
+                handleKeyPress={this.handleKeyPress}
                 result={this.state.result}
                 button_users = {this.state.button_users}
                 button_keywords = {this.state.button_keywords}
@@ -183,17 +208,33 @@ class App extends React.Component {
           </div>
         </div>
       );
-    } else {
-         return (
-        <div className="random-page">
-          <NavbarComp changeTabs={this.changeTabs}/>
-          <div className="random-container">
-            <RandomButton 
-              user_result = {this.state.randomProfiles} 
-              user_result_tweets ={this.state.randomProfilesTweets}/>
+    } else { 
+      if(this.state.bearerActive === true){
+        return (
+          <div className="random-page">
+            <NavbarComp changeTabs={this.changeTabs}/>
+            <div className="random-container">
+              <RandomButton 
+                user_result = {this.state.randomProfiles} 
+                user_result_tweets ={this.state.randomProfilesTweets}/>
+            </div>
           </div>
-        </div>
-      );
+        );
+      } else {
+        return(
+          <div className="random-page">
+            <NavbarComp changeTabs={this.changeTabs}/>
+            <div className="random-container">
+                <div className="random-page-no-bearer">
+                  <div>
+                    Please follow the instructions on the github repo for this project to use it! https://github.com/wolyslager/Twitter-Showcase-App
+                  </div>
+              </div>
+            </div>
+          </div>
+        );
+      }
+      
     }
   }
 }

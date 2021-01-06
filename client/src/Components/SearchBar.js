@@ -2,17 +2,22 @@ import React from 'react'
 import InputGroup from 'react-bootstrap/InputGroup';
 import FormControl from 'react-bootstrap/FormControl';
 import Button from 'react-bootstrap/Button';
+import Form from 'react-bootstrap/Form'
 import Tweet from './Tweet.js'
 import User from './User.js'
 import './SearchBar.css'
 
 const SearchBar = (props) => {
+	let missingBearerMessage;
 	let tweetArray =[];
 	let media;
 	let urlDisplay;
 	let url;
 	if(props.result !== ''){
-		props.result.forEach((result) => {
+		if(props.result.hasOwnProperty('response')){
+			missingBearerMessage = props.result.response;
+		} else {
+			props.result.forEach((result) => {
 			if(result.entities.media){
 				media = result.entities.media[0].media_url;
 			} else {
@@ -29,8 +34,12 @@ const SearchBar = (props) => {
 				favoriteCount={result.favorite_count}/>
 			)
 		})
+	  }	
 	} else if (props.user_result !== ''){
-		console.log(props.user_result)
+		if(props.user_result.hasOwnProperty('response')){
+			missingBearerMessage = props.user_result.response;
+		} else {
+			console.log(props.user_result)
 		if(props.user_result[0].hasOwnProperty('errors')){
 			tweetArray = 'User not found'
 		} else {
@@ -73,6 +82,7 @@ const SearchBar = (props) => {
 				favoriteCount={result.favorite_count}/>
 			)
 		})
+	  }	
 	} else {
 		tweetArray = ''
 	}
@@ -96,7 +106,7 @@ const SearchBar = (props) => {
 						      onChange={props.handleChange}
 						    />
 					    <InputGroup.Append>
-					      <Button className="btn btn-primary" text="light" onClick={() => props.handleSubmit('search')}>Search</Button>
+					      <Button className="btn btn-primary" text="light" type="submit" onClick={() => props.handleSubmit('search')} >Search</Button>
 					    </InputGroup.Append>
 					  </InputGroup>
 					  <Button className={`search-type ${props.keyword_button_class}`} onClick={() => props.handleSearchType('keyword')}>KEYWORDS</Button>
@@ -124,6 +134,7 @@ const SearchBar = (props) => {
 						      aria-label="Recipient's username"
 						      aria-describedby="basic-addon2"
 						      onChange={props.handleChange}
+						      onKeyPress={(event) => {if(event.charCode === 13){props.handleSubmit('search')}}}
 						    />
 					    <InputGroup.Append>
 					      <Button className="btn btn-primary" text="light" onClick={() => props.handleSubmit('search')}>Search</Button>
@@ -133,6 +144,9 @@ const SearchBar = (props) => {
 				  </div>
 				  <div className="tweet-array">
 					{tweetArray}
+				  </div>
+				  <div className="missing-bearer-message">
+					{missingBearerMessage}
 				  </div>
 			  </div>
 			);
@@ -185,6 +199,7 @@ const SearchBar = (props) => {
 					      aria-label="Recipient's username"
 					      aria-describedby="basic-addon2"
 					      onChange={props.handleChange}
+					      onKeyPress={(event) => {if(event.charCode === 13){props.handleSubmit('search-user')}}}
 					    />
 				    <InputGroup.Append>
 				      <Button className="btn btn-primary" text="light" onClick={() => props.handleSubmit('search-user')}>Search</Button>
@@ -194,6 +209,9 @@ const SearchBar = (props) => {
 			  </div>
 			  <div>
 				{tweetArray}
+			  </div>
+			   <div className="missing-bearer-message">
+					{missingBearerMessage}
 			  </div>
 		  </div>
 		);
