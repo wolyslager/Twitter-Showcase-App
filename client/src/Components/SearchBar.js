@@ -8,23 +8,23 @@ import User from './User.js'
 import './SearchBar.css'
 
 const SearchBar = (props) => {
-	let missingBearerMessage;
-	let tweetArray =[];
-	let media;
-	let urlDisplay;
-	let url;
-	if(props.result !== ''){
-		if(props.result.hasOwnProperty('response')){
-			missingBearerMessage = props.result.response;
-		} else {
-			props.result.forEach((result) => {
-			if(result.entities.media){
-				media = result.entities.media[0].media_url;
-			} else {
-				media = '';
-			}
-			tweetArray.push(
-			  <Tweet 
+        let missingBearerMessage;
+        let tweetArray = [];
+        let media;
+        let urlDisplay;
+        let url;
+        if (props.result !== '') {
+            if (props.result.hasOwnProperty('response')) {
+                missingBearerMessage = props.result.response;
+            } else {
+                props.result.forEach((result) => {
+                    if (result.entities.media) {
+                        media = result.entities.media[0].media_url;
+                    } else {
+                        media = '';
+                    }
+                    tweetArray.push(
+                        <Tweet 
 				text={result.full_text} 
 				name={result.user.name} 
 				profile_image={result.user.profile_image_url}
@@ -32,25 +32,25 @@ const SearchBar = (props) => {
 				userName={result.user.screen_name}
 				retweetCount={result.retweet_count}
 				favoriteCount={result.favorite_count}/>
-			)
-		})
-	  }	
-	} else if (props.user_result !== ''){
-		if(props.user_result.hasOwnProperty('response')){
-			missingBearerMessage = props.user_result.response;
-		} else {
-			console.log(props.user_result)
-		if(props.user_result[0].hasOwnProperty('errors')){
-			tweetArray = 'User not found'
-		} else {
-			if(props.user_result[0].entities.hasOwnProperty('url')){
-			 	urlDisplay = props.user_result[0].entities.url.urls[0].display_url;
-			 	url = props.user_result[0].entities.url.urls[0].expanded_url;
-			} else {
-				 urlDisplay = '';
-				 url = '';
-			}
-		   tweetArray.push(<User 
+                    )
+                })
+            }
+        } else if (props.user_result !== '') {
+            if (props.user_result.hasOwnProperty('response')) {
+                missingBearerMessage = props.user_result.response;
+            } else {
+                console.log(props.user_result)
+                if (props.user_result[0].hasOwnProperty('errors')) {
+                    tweetArray = 'User not found'
+                } else {
+                    if (props.user_result[0].entities.hasOwnProperty('url')) {
+                        urlDisplay = props.user_result[0].entities.url.urls[0].display_url;
+                        url = props.user_result[0].entities.url.urls[0].expanded_url;
+                    } else {
+                        urlDisplay = '';
+                        url = '';
+                    }
+                    tweetArray.push(<User 
 		   				profile_image={props.user_result[0].profile_image_url_https}
 		   				background_image={props.user_result[0].profile_banner_url}
 		   				name={props.user_result[0].name}
@@ -62,17 +62,16 @@ const SearchBar = (props) => {
 		   				joined={props.user_result[0].created_at}
 		   				following={props.user_result[0].friends_count}
 		   				followers={props.user_result[0].followers_count}
-		   				caller={'searchbar'}/>
-		   				)
-		}
-		props.user_result[1].statuses.forEach((result) => {
-			if(result.entities.media){
-				media = result.entities.media[0].media_url;
-			} else {
-				media = '';
-			}
-			tweetArray.push(
-			  <Tweet 
+		   				caller={'searchbar'}/>)
+                }
+                props.user_result[1].statuses.forEach((result) => {
+                    if (result.entities.media) {
+                        media = result.entities.media[0].media_url;
+                    } else {
+                        media = '';
+                    }
+                    tweetArray.push(
+                        <Tweet 
 				text={result.full_text} 
 				name={result.user.name} 
 				profile_image={result.user.profile_image_url}
@@ -80,17 +79,17 @@ const SearchBar = (props) => {
 				userName={result.user.screen_name}
 				retweetCount={result.retweet_count}
 				favoriteCount={result.favorite_count}/>
-			)
-		})
-	  }	
-	} else {
-		tweetArray = ''
-	}
+                    )
+                })
+            }
+        } else {
+            tweetArray = ''
+        }
 
-	if(props.search_type == 'keyword'){
-		if(props.loading === true){
-			return(
-				<div className="container">
+        if (props.search_type == 'keyword') {
+            if (props.loading === true) {
+                return (
+                        <div className="container">
 					<div className="instructions">
 						<h5>Select the "User" button if you want to make a search for specific usernames (enter the 
 							username without the @ in the search bar) or select the "Keyword" button if you want to 
@@ -114,13 +113,13 @@ const SearchBar = (props) => {
 				  <div className="loading">
 					  <div class="spinner-border text-primary" role="status" style={{width: "9em", height:"9em"}}>
 					  	<span class="sr-only">Loading...</span>
-					</div>
-				</div>
-			  </div>
-			);
-		} else {
-			return(
-				<div className="container">
+					</div> <
+		  /div> <
+		  /div>
+		  );
+		  } else {
+		      return (
+		              <div className="container">
 					<div className="instructions">
 						<h5>Select the "User" button if you want to make a search for specific usernames (enter the 
 							username without the @ in the search bar) or select the "Keyword" button if you want to 
@@ -149,13 +148,13 @@ const SearchBar = (props) => {
 					{missingBearerMessage}
 				  </div>
 			  </div>
-			);
-		}
-		
-  } else {
-  	if(props.loading === true){
-		 return(
-			<div className="container">
+            );
+        }
+
+    } else {
+        if (props.loading === true) {
+            return (
+                <div className="container">
 				<div className="instructions">
 					<h5>Select the "User" button if you want to make a search for specific usernames (enter the 
 						username without the @ in the search bar) or select the "Keyword" button if you want to 
@@ -182,10 +181,10 @@ const SearchBar = (props) => {
 				</div>
 			  </div>
 		  </div>
-	   );
-  	} else {
-  		return(
-			<div className="container">
+            );
+        } else {
+            return (
+                <div className="container">
 				<div className="instructions">
 					<h5>Select the "User" button if you want to make a search for specific usernames (enter the 
 						username without the @ in the search bar) or select the "Keyword" button if you want to 
@@ -214,9 +213,9 @@ const SearchBar = (props) => {
 					{missingBearerMessage}
 			  </div>
 		  </div>
-		);
-  	}
-  }
+            );
+        }
+    }
 }
 
 export default SearchBar;

@@ -16,7 +16,7 @@ __webpack_require__.r(__webpack_exports__);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(true);
 ___CSS_LOADER_EXPORT___.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Josefin+Sans);"]);
 // Module
-___CSS_LOADER_EXPORT___.push([module.i, "body {\n  font-family: 'Josefin Sans', cursive;\n}\n\n.title-infoboxes-container{\n  height: 100vh;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  flex-direction: column;\n  background-color: #151E29;\n}\n\n.infoboxes-footer-container{\n  display: flex;\n  flex-direction: column;\n  justify-content: space-between;\n  align-items: stretch;\n  margin-bottom: 0em;\n}\n\n.app-container-search{\n  height: 100vh;\n  background-color: #151E29;\n}\n\n.app-container-home{\n  height: 100vh;\n  background-color: #151E29;\n  color: white;\n}\n\n.random-page{\n    height: 100vh;\n    background-color: #151E29;\n}\n\n.random-container{\n  display: flex;\n  justify-content: center;\n  flex-direction: row;\n  flex-wrap: wrap;\n  background-color: #151E29;\n}\n\n.App-logo {\n  height: 40vmin;\n  pointer-events: none;\n}\n\n.title{\n  color: white;\n}\n\n.title-text{\n  font-size: 4rem;\n  color: white;\n}\n\n.search-container{\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  margin-top: 1em;\n  display: flex;\n  justify-content: center;\n  background-color: #151E29;\n}\n\n\n@media (prefers-reduced-motion: no-preference) {\n  .App-logo {\n    animation: App-logo-spin infinite 20s linear;\n  }\n}\n\n.App-header {\n  background-color: #282c34;\n  min-height: 100vh;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n  font-size: calc(10px + 2vmin);\n  color: white;\n}\n\n.App-link {\n  color: #61dafb;\n}\n\n@keyframes App-logo-spin {\n  from {\n    transform: rotate(0deg);\n  }\n  to {\n    transform: rotate(360deg);\n  }\n}\n\n.random-page-no-bearer{\n   height: 100vh;\n  background-color: #151E29;\n  color: white;\n  font-size: 2em;\n}\n", "",{"version":3,"sources":["webpack://src/App.css"],"names":[],"mappings":"AAEA;EACE,oCAAoC;AACtC;;AAEA;EACE,aAAa;EACb,aAAa;EACb,uBAAuB;EACvB,mBAAmB;EACnB,sBAAsB;EACtB,yBAAyB;AAC3B;;AAEA;EACE,aAAa;EACb,sBAAsB;EACtB,8BAA8B;EAC9B,oBAAoB;EACpB,kBAAkB;AACpB;;AAEA;EACE,aAAa;EACb,yBAAyB;AAC3B;;AAEA;EACE,aAAa;EACb,yBAAyB;EACzB,YAAY;AACd;;AAEA;IACI,aAAa;IACb,yBAAyB;AAC7B;;AAEA;EACE,aAAa;EACb,uBAAuB;EACvB,mBAAmB;EACnB,eAAe;EACf,yBAAyB;AAC3B;;AAEA;EACE,cAAc;EACd,oBAAoB;AACtB;;AAEA;EACE,YAAY;AACd;;AAEA;EACE,eAAe;EACf,YAAY;AACd;;AAEA;EACE,aAAa;EACb,sBAAsB;EACtB,mBAAmB;EACnB,eAAe;EACf,aAAa;EACb,uBAAuB;EACvB,yBAAyB;AAC3B;;;AAGA;EACE;IACE,4CAA4C;EAC9C;AACF;;AAEA;EACE,yBAAyB;EACzB,iBAAiB;EACjB,aAAa;EACb,sBAAsB;EACtB,mBAAmB;EACnB,uBAAuB;EACvB,6BAA6B;EAC7B,YAAY;AACd;;AAEA;EACE,cAAc;AAChB;;AAEA;EACE;IACE,uBAAuB;EACzB;EACA;IACE,yBAAyB;EAC3B;AACF;;AAEA;GACG,aAAa;EACd,yBAAyB;EACzB,YAAY;EACZ,cAAc;AAChB","sourcesContent":["@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');\n\nbody {\n  font-family: 'Josefin Sans', cursive;\n}\n\n.title-infoboxes-container{\n  height: 100vh;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  flex-direction: column;\n  background-color: #151E29;\n}\n\n.infoboxes-footer-container{\n  display: flex;\n  flex-direction: column;\n  justify-content: space-between;\n  align-items: stretch;\n  margin-bottom: 0em;\n}\n\n.app-container-search{\n  height: 100vh;\n  background-color: #151E29;\n}\n\n.app-container-home{\n  height: 100vh;\n  background-color: #151E29;\n  color: white;\n}\n\n.random-page{\n    height: 100vh;\n    background-color: #151E29;\n}\n\n.random-container{\n  display: flex;\n  justify-content: center;\n  flex-direction: row;\n  flex-wrap: wrap;\n  background-color: #151E29;\n}\n\n.App-logo {\n  height: 40vmin;\n  pointer-events: none;\n}\n\n.title{\n  color: white;\n}\n\n.title-text{\n  font-size: 4rem;\n  color: white;\n}\n\n.search-container{\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  margin-top: 1em;\n  display: flex;\n  justify-content: center;\n  background-color: #151E29;\n}\n\n\n@media (prefers-reduced-motion: no-preference) {\n  .App-logo {\n    animation: App-logo-spin infinite 20s linear;\n  }\n}\n\n.App-header {\n  background-color: #282c34;\n  min-height: 100vh;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n  font-size: calc(10px + 2vmin);\n  color: white;\n}\n\n.App-link {\n  color: #61dafb;\n}\n\n@keyframes App-logo-spin {\n  from {\n    transform: rotate(0deg);\n  }\n  to {\n    transform: rotate(360deg);\n  }\n}\n\n.random-page-no-bearer{\n   height: 100vh;\n  background-color: #151E29;\n  color: white;\n  font-size: 2em;\n}\n"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.i, "body {\n    font-family: 'Josefin Sans', cursive;\n}\n\n.title-infoboxes-container {\n    height: 100vh;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    flex-direction: column;\n    background-color: #151E29;\n}\n\n.infoboxes-footer-container {\n    display: flex;\n    flex-direction: column;\n    justify-content: space-between;\n    align-items: stretch;\n    margin-bottom: 0em;\n}\n\n.app-container-search {\n    height: 100vh;\n    background-color: #151E29;\n}\n\n.app-container-home {\n    height: 100vh;\n    background-color: #151E29;\n    color: white;\n}\n\n.random-page {\n    height: 100vh;\n    background-color: #151E29;\n}\n\n.random-container {\n    display: flex;\n    justify-content: center;\n    flex-direction: row;\n    flex-wrap: wrap;\n    background-color: #151E29;\n}\n\n.App-logo {\n    height: 40vmin;\n    pointer-events: none;\n}\n\n.title {\n    color: white;\n}\n\n.title-text {\n    font-size: 4rem;\n    color: white;\n}\n\n.search-container {\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    margin-top: 1em;\n    display: flex;\n    justify-content: center;\n    background-color: #151E29;\n}\n\n\n@media (prefers-reduced-motion: no-preference) {\n    .App-logo {\n        animation: App-logo-spin infinite 20s linear;\n    }\n}\n\n.App-header {\n    background-color: #282c34;\n    min-height: 100vh;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center;\n    font-size: calc(10px + 2vmin);\n    color: white;\n}\n\n.App-link {\n    color: #61dafb;\n}\n\n@keyframes App-logo-spin {\n    from {\n        transform: rotate(0deg);\n    }\n\n    to {\n        transform: rotate(360deg);\n    }\n}\n\n.random-page-no-bearer {\n    height: 100vh;\n    background-color: #151E29;\n    color: white;\n    font-size: 2em;\n}", "",{"version":3,"sources":["webpack://src/App.css"],"names":[],"mappings":"AAEA;IACI,oCAAoC;AACxC;;AAEA;IACI,aAAa;IACb,aAAa;IACb,uBAAuB;IACvB,mBAAmB;IACnB,sBAAsB;IACtB,yBAAyB;AAC7B;;AAEA;IACI,aAAa;IACb,sBAAsB;IACtB,8BAA8B;IAC9B,oBAAoB;IACpB,kBAAkB;AACtB;;AAEA;IACI,aAAa;IACb,yBAAyB;AAC7B;;AAEA;IACI,aAAa;IACb,yBAAyB;IACzB,YAAY;AAChB;;AAEA;IACI,aAAa;IACb,yBAAyB;AAC7B;;AAEA;IACI,aAAa;IACb,uBAAuB;IACvB,mBAAmB;IACnB,eAAe;IACf,yBAAyB;AAC7B;;AAEA;IACI,cAAc;IACd,oBAAoB;AACxB;;AAEA;IACI,YAAY;AAChB;;AAEA;IACI,eAAe;IACf,YAAY;AAChB;;AAEA;IACI,aAAa;IACb,sBAAsB;IACtB,mBAAmB;IACnB,eAAe;IACf,aAAa;IACb,uBAAuB;IACvB,yBAAyB;AAC7B;;;AAGA;IACI;QACI,4CAA4C;IAChD;AACJ;;AAEA;IACI,yBAAyB;IACzB,iBAAiB;IACjB,aAAa;IACb,sBAAsB;IACtB,mBAAmB;IACnB,uBAAuB;IACvB,6BAA6B;IAC7B,YAAY;AAChB;;AAEA;IACI,cAAc;AAClB;;AAEA;IACI;QACI,uBAAuB;IAC3B;;IAEA;QACI,yBAAyB;IAC7B;AACJ;;AAEA;IACI,aAAa;IACb,yBAAyB;IACzB,YAAY;IACZ,cAAc;AAClB","sourcesContent":["@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');\n\nbody {\n    font-family: 'Josefin Sans', cursive;\n}\n\n.title-infoboxes-container {\n    height: 100vh;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    flex-direction: column;\n    background-color: #151E29;\n}\n\n.infoboxes-footer-container {\n    display: flex;\n    flex-direction: column;\n    justify-content: space-between;\n    align-items: stretch;\n    margin-bottom: 0em;\n}\n\n.app-container-search {\n    height: 100vh;\n    background-color: #151E29;\n}\n\n.app-container-home {\n    height: 100vh;\n    background-color: #151E29;\n    color: white;\n}\n\n.random-page {\n    height: 100vh;\n    background-color: #151E29;\n}\n\n.random-container {\n    display: flex;\n    justify-content: center;\n    flex-direction: row;\n    flex-wrap: wrap;\n    background-color: #151E29;\n}\n\n.App-logo {\n    height: 40vmin;\n    pointer-events: none;\n}\n\n.title {\n    color: white;\n}\n\n.title-text {\n    font-size: 4rem;\n    color: white;\n}\n\n.search-container {\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    margin-top: 1em;\n    display: flex;\n    justify-content: center;\n    background-color: #151E29;\n}\n\n\n@media (prefers-reduced-motion: no-preference) {\n    .App-logo {\n        animation: App-logo-spin infinite 20s linear;\n    }\n}\n\n.App-header {\n    background-color: #282c34;\n    min-height: 100vh;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center;\n    font-size: calc(10px + 2vmin);\n    color: white;\n}\n\n.App-link {\n    color: #61dafb;\n}\n\n@keyframes App-logo-spin {\n    from {\n        transform: rotate(0deg);\n    }\n\n    to {\n        transform: rotate(360deg);\n    }\n}\n\n.random-page-no-bearer {\n    height: 100vh;\n    background-color: #151E29;\n    color: white;\n    font-size: 2em;\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
 
@@ -82,7 +82,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(true);
 // Module
-___CSS_LOADER_EXPORT___.push([module.i, ".card-container-profiles{\n\tdisplay: flex;\n\tflex-direction: row;\n\tmargin: 0 auto;\n\tflex-wrap: wrap;\n\tmargin-left: 2em;\n}\n\n.user-card:hover{\n\ttransform: scale(1.5);\n\tcursor: pointer;\n}", "",{"version":3,"sources":["webpack://src/Components/RandomButton.css"],"names":[],"mappings":"AAAA;CACC,aAAa;CACb,mBAAmB;CACnB,cAAc;CACd,eAAe;CACf,gBAAgB;AACjB;;AAEA;CACC,qBAAqB;CACrB,eAAe;AAChB","sourcesContent":[".card-container-profiles{\n\tdisplay: flex;\n\tflex-direction: row;\n\tmargin: 0 auto;\n\tflex-wrap: wrap;\n\tmargin-left: 2em;\n}\n\n.user-card:hover{\n\ttransform: scale(1.5);\n\tcursor: pointer;\n}"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.i, ".card-container-profiles {\n    display: flex;\n    flex-direction: row;\n    margin: 0 auto;\n    flex-wrap: wrap;\n    margin-left: 2em;\n}\n\n.user-card:hover {\n    transform: scale(1.5);\n    cursor: pointer;\n}", "",{"version":3,"sources":["webpack://src/Components/RandomButton.css"],"names":[],"mappings":"AAAA;IACI,aAAa;IACb,mBAAmB;IACnB,cAAc;IACd,eAAe;IACf,gBAAgB;AACpB;;AAEA;IACI,qBAAqB;IACrB,eAAe;AACnB","sourcesContent":[".card-container-profiles {\n    display: flex;\n    flex-direction: row;\n    margin: 0 auto;\n    flex-wrap: wrap;\n    margin-left: 2em;\n}\n\n.user-card:hover {\n    transform: scale(1.5);\n    cursor: pointer;\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
 
@@ -284,7 +284,7 @@ class App extends react__WEBPACK_IMPORTED_MODULE_3___default.a.Component {
 
   handleKeyPress(event) {
     if (event.charCode === 13) {
-      this.handleSubmit();
+      this.handleSubmit;
     }
   }
 
@@ -448,7 +448,7 @@ class App extends react__WEBPACK_IMPORTED_MODULE_3___default.a.Component {
       }, void 0, true, {
         fileName: _jsxFileName,
         lineNumber: 176,
-        columnNumber: 9
+        columnNumber: 17
       }, this);
     } else if (this.state.page == 2) {
       return /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
@@ -488,7 +488,7 @@ class App extends react__WEBPACK_IMPORTED_MODULE_3___default.a.Component {
       }, void 0, true, {
         fileName: _jsxFileName,
         lineNumber: 191,
-        columnNumber: 9
+        columnNumber: 17
       }, this);
     } else {
       if (this.state.bearerActive === true) {
@@ -518,7 +518,7 @@ class App extends react__WEBPACK_IMPORTED_MODULE_3___default.a.Component {
         }, void 0, true, {
           fileName: _jsxFileName,
           lineNumber: 214,
-          columnNumber: 11
+          columnNumber: 21
         }, this);
       } else {
         return /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
@@ -553,7 +553,7 @@ class App extends react__WEBPACK_IMPORTED_MODULE_3___default.a.Component {
         }, void 0, true, {
           fileName: _jsxFileName,
           lineNumber: 225,
-          columnNumber: 11
+          columnNumber: 21
         }, this);
       }
     }
@@ -997,7 +997,7 @@ const NavbarComp = props => {
   }, void 0, false, {
     fileName: _jsxFileName,
     lineNumber: 14,
-    columnNumber: 3
+    columnNumber: 9
   }, undefined);
 };
 
@@ -1085,7 +1085,7 @@ const RandomButton = props => {
     }, void 0, false, {
       fileName: _jsxFileName,
       lineNumber: 15,
-      columnNumber: 5
+      columnNumber: 13
     }, undefined));
   });
   return /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
@@ -1094,7 +1094,7 @@ const RandomButton = props => {
   }, void 0, false, {
     fileName: _jsxFileName,
     lineNumber: 32,
-    columnNumber: 7
+    columnNumber: 9
   }, undefined);
 };
 
@@ -1192,7 +1192,7 @@ const SearchBar = props => {
         }, void 0, false, {
           fileName: _jsxFileName,
           lineNumber: 27,
-          columnNumber: 6
+          columnNumber: 25
         }, undefined));
       });
     }
@@ -1229,7 +1229,7 @@ const SearchBar = props => {
         }, void 0, false, {
           fileName: _jsxFileName,
           lineNumber: 53,
-          columnNumber: 22
+          columnNumber: 37
         }, undefined));
       }
 
@@ -1250,8 +1250,8 @@ const SearchBar = props => {
           favoriteCount: result.favorite_count
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 75,
-          columnNumber: 6
+          lineNumber: 74,
+          columnNumber: 25
         }, undefined));
       });
     }
@@ -1269,12 +1269,12 @@ const SearchBar = props => {
             children: "Select the \"User\" button if you want to make a search for specific usernames (enter the username without the @ in the search bar) or select the \"Keyword\" button if you want to make a search for specific words of phrases. "
           }, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 95,
+            lineNumber: 94,
             columnNumber: 7
           }, undefined)
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 94,
+          lineNumber: 93,
           columnNumber: 6
         }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
           className: "searchbar-container",
@@ -1284,7 +1284,7 @@ const SearchBar = props => {
             children: "USERS"
           }, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 100,
+            lineNumber: 99,
             columnNumber: 7
           }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(react_bootstrap_InputGroup__WEBPACK_IMPORTED_MODULE_2__["default"], {
             className: "mb-3",
@@ -1298,7 +1298,7 @@ const SearchBar = props => {
               onChange: props.handleChange
             }, void 0, false, {
               fileName: _jsxFileName,
-              lineNumber: 102,
+              lineNumber: 101,
               columnNumber: 11
             }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(react_bootstrap_InputGroup__WEBPACK_IMPORTED_MODULE_2__["default"].Append, {
               children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(react_bootstrap_Button__WEBPACK_IMPORTED_MODULE_4__["default"], {
@@ -1309,17 +1309,17 @@ const SearchBar = props => {
                 children: "Search"
               }, void 0, false, {
                 fileName: _jsxFileName,
-                lineNumber: 109,
+                lineNumber: 108,
                 columnNumber: 12
               }, undefined)
             }, void 0, false, {
               fileName: _jsxFileName,
-              lineNumber: 108,
+              lineNumber: 107,
               columnNumber: 10
             }, undefined)]
           }, void 0, true, {
             fileName: _jsxFileName,
-            lineNumber: 101,
+            lineNumber: 100,
             columnNumber: 7
           }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(react_bootstrap_Button__WEBPACK_IMPORTED_MODULE_4__["default"], {
             className: `search-type ${props.keyword_button_class}`,
@@ -1327,16 +1327,16 @@ const SearchBar = props => {
             children: "KEYWORDS"
           }, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 112,
+            lineNumber: 111,
             columnNumber: 8
           }, undefined)]
         }, void 0, true, {
           fileName: _jsxFileName,
-          lineNumber: 99,
+          lineNumber: 98,
           columnNumber: 6
         }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
           className: "loading",
-          children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
+          children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
             class: "spinner-border text-primary",
             role: "status",
             style: {
@@ -1348,23 +1348,23 @@ const SearchBar = props => {
               children: "Loading..."
             }, void 0, false, {
               fileName: _jsxFileName,
-              lineNumber: 116,
+              lineNumber: 115,
               columnNumber: 9
             }, undefined)
           }, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 115,
+            lineNumber: 114,
             columnNumber: 8
-          }, undefined)
-        }, void 0, false, {
+          }, undefined), " "]
+        }, void 0, true, {
           fileName: _jsxFileName,
-          lineNumber: 114,
+          lineNumber: 113,
           columnNumber: 7
-        }, undefined)]
+        }, undefined), " "]
       }, void 0, true, {
         fileName: _jsxFileName,
-        lineNumber: 93,
-        columnNumber: 5
+        lineNumber: 92,
+        columnNumber: 25
       }, undefined);
     } else {
       return /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
@@ -1375,12 +1375,12 @@ const SearchBar = props => {
             children: "Select the \"User\" button if you want to make a search for specific usernames (enter the username without the @ in the search bar) or select the \"Keyword\" button if you want to make a search for specific words of phrases. "
           }, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 125,
+            lineNumber: 124,
             columnNumber: 7
           }, undefined)
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 124,
+          lineNumber: 123,
           columnNumber: 6
         }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
           className: "searchbar-container",
@@ -1390,7 +1390,7 @@ const SearchBar = props => {
             children: "USERS"
           }, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 130,
+            lineNumber: 129,
             columnNumber: 7
           }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(react_bootstrap_InputGroup__WEBPACK_IMPORTED_MODULE_2__["default"], {
             className: "mb-3",
@@ -1409,7 +1409,7 @@ const SearchBar = props => {
               }
             }, void 0, false, {
               fileName: _jsxFileName,
-              lineNumber: 132,
+              lineNumber: 131,
               columnNumber: 11
             }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(react_bootstrap_InputGroup__WEBPACK_IMPORTED_MODULE_2__["default"].Append, {
               children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(react_bootstrap_Button__WEBPACK_IMPORTED_MODULE_4__["default"], {
@@ -1419,17 +1419,17 @@ const SearchBar = props => {
                 children: "Search"
               }, void 0, false, {
                 fileName: _jsxFileName,
-                lineNumber: 140,
+                lineNumber: 139,
                 columnNumber: 12
               }, undefined)
             }, void 0, false, {
               fileName: _jsxFileName,
-              lineNumber: 139,
+              lineNumber: 138,
               columnNumber: 10
             }, undefined)]
           }, void 0, true, {
             fileName: _jsxFileName,
-            lineNumber: 131,
+            lineNumber: 130,
             columnNumber: 7
           }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(react_bootstrap_Button__WEBPACK_IMPORTED_MODULE_4__["default"], {
             className: `search-type ${props.keyword_button_class}`,
@@ -1437,32 +1437,32 @@ const SearchBar = props => {
             children: "KEYWORDS"
           }, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 143,
+            lineNumber: 142,
             columnNumber: 8
           }, undefined)]
         }, void 0, true, {
           fileName: _jsxFileName,
-          lineNumber: 129,
+          lineNumber: 128,
           columnNumber: 6
         }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
           className: "tweet-array",
           children: tweetArray
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 145,
+          lineNumber: 144,
           columnNumber: 7
         }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
           className: "missing-bearer-message",
           children: missingBearerMessage
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 148,
+          lineNumber: 147,
           columnNumber: 7
         }, undefined)]
       }, void 0, true, {
         fileName: _jsxFileName,
-        lineNumber: 123,
-        columnNumber: 5
+        lineNumber: 122,
+        columnNumber: 17
       }, undefined);
     }
   } else {
@@ -1475,12 +1475,12 @@ const SearchBar = props => {
             children: "Select the \"User\" button if you want to make a search for specific usernames (enter the username without the @ in the search bar) or select the \"Keyword\" button if you want to make a search for specific words of phrases. "
           }, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 160,
+            lineNumber: 159,
             columnNumber: 6
           }, undefined)
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 159,
+          lineNumber: 158,
           columnNumber: 5
         }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
           className: "searchbar-container",
@@ -1490,7 +1490,7 @@ const SearchBar = props => {
             children: "USERS"
           }, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 165,
+            lineNumber: 164,
             columnNumber: 6
           }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(react_bootstrap_InputGroup__WEBPACK_IMPORTED_MODULE_2__["default"], {
             className: "mb-3",
@@ -1504,7 +1504,7 @@ const SearchBar = props => {
               onChange: props.handleChange
             }, void 0, false, {
               fileName: _jsxFileName,
-              lineNumber: 167,
+              lineNumber: 166,
               columnNumber: 10
             }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(react_bootstrap_InputGroup__WEBPACK_IMPORTED_MODULE_2__["default"].Append, {
               children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(react_bootstrap_Button__WEBPACK_IMPORTED_MODULE_4__["default"], {
@@ -1514,17 +1514,17 @@ const SearchBar = props => {
                 children: "Search"
               }, void 0, false, {
                 fileName: _jsxFileName,
-                lineNumber: 174,
+                lineNumber: 173,
                 columnNumber: 11
               }, undefined)
             }, void 0, false, {
               fileName: _jsxFileName,
-              lineNumber: 173,
+              lineNumber: 172,
               columnNumber: 9
             }, undefined)]
           }, void 0, true, {
             fileName: _jsxFileName,
-            lineNumber: 166,
+            lineNumber: 165,
             columnNumber: 6
           }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(react_bootstrap_Button__WEBPACK_IMPORTED_MODULE_4__["default"], {
             className: `search-type ${props.keyword_button_class}`,
@@ -1532,12 +1532,12 @@ const SearchBar = props => {
             children: "KEYWORDS"
           }, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 177,
+            lineNumber: 176,
             columnNumber: 7
           }, undefined)]
         }, void 0, true, {
           fileName: _jsxFileName,
-          lineNumber: 164,
+          lineNumber: 163,
           columnNumber: 5
         }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
           className: "loading",
@@ -1553,23 +1553,23 @@ const SearchBar = props => {
               children: "Loading..."
             }, void 0, false, {
               fileName: _jsxFileName,
-              lineNumber: 181,
+              lineNumber: 180,
               columnNumber: 7
             }, undefined)
           }, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 180,
+            lineNumber: 179,
             columnNumber: 5
           }, undefined)
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 179,
+          lineNumber: 178,
           columnNumber: 6
         }, undefined)]
       }, void 0, true, {
         fileName: _jsxFileName,
-        lineNumber: 158,
-        columnNumber: 4
+        lineNumber: 157,
+        columnNumber: 17
       }, undefined);
     } else {
       return /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
@@ -1580,12 +1580,12 @@ const SearchBar = props => {
             children: "Select the \"User\" button if you want to make a search for specific usernames (enter the username without the @ in the search bar) or select the \"Keyword\" button if you want to make a search for specific words of phrases. "
           }, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 190,
+            lineNumber: 189,
             columnNumber: 6
           }, undefined)
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 189,
+          lineNumber: 188,
           columnNumber: 5
         }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
           className: "searchbar-container",
@@ -1595,7 +1595,7 @@ const SearchBar = props => {
             children: "USERS"
           }, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 195,
+            lineNumber: 194,
             columnNumber: 6
           }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(react_bootstrap_InputGroup__WEBPACK_IMPORTED_MODULE_2__["default"], {
             className: "mb-3",
@@ -1614,7 +1614,7 @@ const SearchBar = props => {
               }
             }, void 0, false, {
               fileName: _jsxFileName,
-              lineNumber: 197,
+              lineNumber: 196,
               columnNumber: 10
             }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(react_bootstrap_InputGroup__WEBPACK_IMPORTED_MODULE_2__["default"].Append, {
               children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(react_bootstrap_Button__WEBPACK_IMPORTED_MODULE_4__["default"], {
@@ -1624,17 +1624,17 @@ const SearchBar = props => {
                 children: "Search"
               }, void 0, false, {
                 fileName: _jsxFileName,
-                lineNumber: 205,
+                lineNumber: 204,
                 columnNumber: 11
               }, undefined)
             }, void 0, false, {
               fileName: _jsxFileName,
-              lineNumber: 204,
+              lineNumber: 203,
               columnNumber: 9
             }, undefined)]
           }, void 0, true, {
             fileName: _jsxFileName,
-            lineNumber: 196,
+            lineNumber: 195,
             columnNumber: 6
           }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(react_bootstrap_Button__WEBPACK_IMPORTED_MODULE_4__["default"], {
             className: `search-type ${props.keyword_button_class}`,
@@ -1642,31 +1642,31 @@ const SearchBar = props => {
             children: "KEYWORDS"
           }, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 208,
+            lineNumber: 207,
             columnNumber: 7
           }, undefined)]
         }, void 0, true, {
           fileName: _jsxFileName,
-          lineNumber: 194,
+          lineNumber: 193,
           columnNumber: 5
         }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
           children: tweetArray
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 210,
+          lineNumber: 209,
           columnNumber: 6
         }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
           className: "missing-bearer-message",
           children: missingBearerMessage
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 213,
+          lineNumber: 212,
           columnNumber: 7
         }, undefined)]
       }, void 0, true, {
         fileName: _jsxFileName,
-        lineNumber: 188,
-        columnNumber: 4
+        lineNumber: 187,
+        columnNumber: 17
       }, undefined);
     }
   }

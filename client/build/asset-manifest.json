@@ -5,8 +5,7 @@
     "main.js": "/twitter-showcase-app/js/main.chunk.js",
     "main.js.map": "/twitter-showcase-app/js/main.chunk.js.map",
     "runtime-main.js": "/twitter-showcase-app/js/bundle.js",
-    "runtime-main.js.map": "/twitter-showcase-app/js/bundle.js.map",
-    "index.html": "/twitter-showcase-app/index.html"
+    "runtime-main.js.map": "/twitter-showcase-app/js/bundle.js.map"
   },
   "entrypoints": [
     "js/bundle.js",

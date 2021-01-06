@@ -10,8 +10,8 @@ import { faTwitterSquare } from '@fortawesome/free-brands-svg-icons'
 import './SearchBar.css'
 
 const NavbarComp = (props) => {
-	return(
-		<div className="navbar-container">
+    return (
+        <div className="navbar-container">
 		  <Navbar bg="dark" variant="dark">
 			    <Navbar.Brand href="#home">
 			    	<FontAwesomeIcon icon={faTwitterSquare} style= {{color: "#007bff"}} className="fa-lg"onClick={() => props.changeTabs(1)} />
@@ -23,7 +23,7 @@ const NavbarComp = (props) => {
 			    </Nav>
 		  </Navbar>
 	  </div>
-	);
+    );
 }
 
 export default NavbarComp;

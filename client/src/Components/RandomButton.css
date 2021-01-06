@@ -1,12 +1,12 @@
-.card-container-profiles{
-	display: flex;
-	flex-direction: row;
-	margin: 0 auto;
-	flex-wrap: wrap;
-	margin-left: 2em;
+.card-container-profiles {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    margin-left: 2em;
 }
 
-.user-card:hover{
-	transform: scale(1.5);
-	cursor: pointer;
+.user-card:hover {
+    transform: scale(1.5);
+    cursor: pointer;
 }
