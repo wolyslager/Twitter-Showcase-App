@@ -11,7 +11,7 @@ Try it [here!](https://infinite-shore-03171.herokuapp.com/)
 2) run touch .env to create a .env file
 3) [obtain API_KEY and SECRET_API_KEY from Twitter](https://rapidapi.com/blog/how-to-use-the-twitter-api/)
 4) place keys inside of .env file (follow example file .env_example for formatting)
-5) cd into client folder and run nmp install
+5) cd into client folder and run npm install
 6) cd back into root directory and run npm run dev
 7) open app in browser in localhost:3000
 
