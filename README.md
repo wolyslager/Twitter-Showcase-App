@@ -8,7 +8,7 @@ Try it [here!](https://infinite-shore-03171.herokuapp.com/)
 
 ## Instructions & How To Use App
 1) cd into the app root directory in terminal
-2) Run touch .env to create a .env file
+2) run touch .env to create a .env file
 3) [obtain API_KEY and SECRET_API_KEY from Twitter](https://rapidapi.com/blog/how-to-use-the-twitter-api/)
 4) place keys inside of .env file (follow example file .env_example for formatting)
 5) cd into client folder and run nmp install
